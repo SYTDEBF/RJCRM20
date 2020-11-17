@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="bootstrapfx-core-0.2.4">
     <CLASSES>
-      <root url="jar://$USER_HOME$/javaLib/bootstrapfx-core-0.2.4.jar!/" />
-      <root url="jar://$USER_HOME$/javaLib/fontawesomefx-8.9.jar!/" />
-      <root url="jar://$USER_HOME$/javaLib/mybatis-3.5.5.jar!/" />
-      <root url="jar://$USER_HOME$/javaLib/mysql-connector-java-8.0.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bootstrapfx-core-0.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mybatis-3.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

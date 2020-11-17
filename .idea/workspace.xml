@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="第一次提交" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="workpece修改提交">
+      <change afterPath="$PROJECT_DIR$/lib/bootstrapfx-core-0.2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/fontawesomefx-8.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mybatis-3.5.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/bootstrapfx_core_0_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/bootstrapfx_core_0_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RJCRM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RJCRM.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,15 +104,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.last.edited" value="库" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20344828" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/res" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
@@ -157,6 +167,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -200,6 +221,7 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1605578937246" duration="221000" />
       <workItem from="1605579164616" duration="424000" />
+      <workItem from="1605579656381" duration="188000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1605579615573</created>
@@ -208,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605579615573</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="workpece修改提交">
+      <created>1605579697573</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605579697573</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,45 +253,47 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+    <MESSAGE value="workpece修改提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="workpece修改提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605579104994">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
     <state x="184" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.792@0.25.1440.792" timestamp="1605579104994" />
-    <state x="208" y="25" key="#项目结构" timestamp="1605579127382">
+    <state x="208" y="25" key="#项目结构" timestamp="1605579808639">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
-    <state x="208" y="25" key="#项目结构/0.25.1440.792@0.25.1440.792" timestamp="1605579127382" />
-    <state width="1398" height="200" key="GridCell.Tab.0.bottom" timestamp="1605579651479">
+    <state x="208" y="25" key="#项目结构/0.25.1440.792@0.25.1440.792" timestamp="1605579808639" />
+    <state width="1398" height="200" key="GridCell.Tab.0.bottom" timestamp="1605579726638">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.0.bottom/0.25.1440.792@0.25.1440.792" timestamp="1605579651479" />
-    <state width="1398" height="200" key="GridCell.Tab.0.center" timestamp="1605579651478">
+    <state width="1398" height="200" key="GridCell.Tab.0.bottom/0.25.1440.792@0.25.1440.792" timestamp="1605579726638" />
+    <state width="1398" height="200" key="GridCell.Tab.0.center" timestamp="1605579726638">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.0.center/0.25.1440.792@0.25.1440.792" timestamp="1605579651478" />
-    <state width="1398" height="200" key="GridCell.Tab.0.left" timestamp="1605579651478">
+    <state width="1398" height="200" key="GridCell.Tab.0.center/0.25.1440.792@0.25.1440.792" timestamp="1605579726638" />
+    <state width="1398" height="200" key="GridCell.Tab.0.left" timestamp="1605579726637">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.0.left/0.25.1440.792@0.25.1440.792" timestamp="1605579651478" />
-    <state width="1398" height="200" key="GridCell.Tab.0.right" timestamp="1605579651479">
+    <state width="1398" height="200" key="GridCell.Tab.0.left/0.25.1440.792@0.25.1440.792" timestamp="1605579726637" />
+    <state width="1398" height="200" key="GridCell.Tab.0.right" timestamp="1605579726638">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
-    <state width="1398" height="200" key="GridCell.Tab.0.right/0.25.1440.792@0.25.1440.792" timestamp="1605579651479" />
-    <state x="208" y="25" key="SettingsEditor" timestamp="1605579066682">
+    <state width="1398" height="200" key="GridCell.Tab.0.right/0.25.1440.792@0.25.1440.792" timestamp="1605579726638" />
+    <state x="208" y="25" key="SettingsEditor" timestamp="1605579846397">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
-    <state x="208" y="25" key="SettingsEditor/0.25.1440.792@0.25.1440.792" timestamp="1605579066682" />
-    <state x="320" y="159" key="Vcs.Push.Dialog.v2" timestamp="1605579622114">
+    <state x="208" y="25" key="SettingsEditor/0.25.1440.792@0.25.1440.792" timestamp="1605579846397" />
+    <state x="320" y="159" key="Vcs.Push.Dialog.v2" timestamp="1605579701989">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
-    <state x="320" y="159" key="Vcs.Push.Dialog.v2/0.25.1440.792@0.25.1440.792" timestamp="1605579622114" />
+    <state x="320" y="159" key="Vcs.Push.Dialog.v2/0.25.1440.792@0.25.1440.792" timestamp="1605579701989" />
   </component>
 </project>
