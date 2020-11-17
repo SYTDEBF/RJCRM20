@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color:white" stylesheets="@/css/adminUI.css" fx:controller="controller.AdminSerUserCon">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" style="-fx-background-color: rgb(248,246,231);">
+
+
+            <Label  textAlignment="CENTER" fx:id="serLabel">
+               <VBox.margin>
+                  <Insets left="10.0"  top="10.0" />
+               </VBox.margin>
+            </Label>
+
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+
+            <Label alignment="CENTER" contentDisplay="CENTER" text="搜索结果" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="5.0" right="30.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Microsoft YaHei" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="serre">
+            </TableView>
+
+      </VBox>
+   </center>
+</BorderPane>

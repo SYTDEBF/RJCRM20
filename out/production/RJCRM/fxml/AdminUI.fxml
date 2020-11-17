@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.control.TabPane?>
+<HBox
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="controller.AdminMainCon"
+        stylesheets="@/css/adminUI.css"
+        style="-fx-background-color:white"
+        prefWidth="1200"
+        prefHeight="700"
+>
+    <Pane
+            minWidth="61"
+            style="-fx-background-color: rgb(248,246,231);"
+            fx:id="leftPane"
+    >
+        <padding>
+            <Insets  />
+        </padding>
+        <StackPane alignment="CENTER">
+            <padding>
+                <Insets top="5" left="4" right="1"/>
+            </padding>
+            <Ellipse radiusX="30f" centerX="30f" radiusY="30f" centerY="30f" fill="pink"></Ellipse>
+        </StackPane>
+
+    </Pane>
+    <TabPane prefWidth="1150" prefHeight="30" HBox.hgrow="ALWAYS" fx:id="wordText1" stylesheets="@/css/TabPane.css" tabMaxWidth="150" tabMinWidth="150" tabClosingPolicy="UNAVAILABLE" tabDragPolicy="REORDER"/>
+
+
+</HBox>
+
