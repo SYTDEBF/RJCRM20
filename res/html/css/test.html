@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+    <script src="jquery.js"></script>
+    <script src="tree.js"></script>
+    <link rel="stylesheet" href="font-awesome.min.css">
+
+    <style>
+        ul,li{list-style-type:none;}
+        .tree{display:block;position:relative;padding:5px 15px;}
+        .tree span{display:inline-block;box-sizing:border-box;height:30px;line-height:28px;min-width:60px;text-align:center;color:#888;border:1px solid #ddd;border-radius:5px;padding:0 8px;}
+        .tree ul{position:relative;padding-left:60px;margin:0;}
+        .tree ul>li{position:relative;padding:5px 0;}
+        .tree>ul{padding:0;margin:0;}
+        /** 水平方向连线 */
+        .tree>ul ul>li:after{content:' ';position:absolute;top:20px;left:-45px;width:45px;border:none;border-top:1px solid #ddd;}
+        /** 垂直方向连线 */
+        .tree ul>li:not(:last-child):before{content:' ';position:absolute;top:0;left:-45px;height:100%;border:none;border-left:1px solid #ddd;}
+        .tree ul>li:last-child:before{content:' ';position:absolute;top:0;left:-45px;height:20px;border:none;border-left:1px solid #ddd;}
+        /** 控制鼠标移上去的颜色 */
+        .tree span:hover, .tree span:hover+ul span{color:#fff;background-color:orange;}
+        .tree span:hover, .tree span:hover+ul span, .tree span:hover+ul li:before, .tree span:hover+ul li:after{border-color:orange;}
+        /** 折叠图标 */
+        .tree .fa:before{margin-right:5px;}
+        .tree .fa-minus-circle, .tree .fa-plus-circle{cursor:pointer;}
+    </style>
+</head>
+<body>
+<div class ="tree">
+
+</div>
+<script>
+    // $(function ()
+    // {
+    //     var aTree=[{"name":"数码","pid":0,"id":2},{"name":"食品","pid":0,"id":3},{"name":"服装","pid":0,"id":4},{"name":"手机","pid":2,"id":5},{"name":"平板","pid":2,"id":6},{"name":"电脑","pid":2,"id":7},{"name":"音响","pid":2,"id":8},{"name":"入耳式耳机","pid":8,"id":9},{"name":"头戴式耳机","pid":8,"id":10},{"name":"有源音箱","pid":8,"id":11},{"name":"蓝牙音箱","pid":8,"id":12},{"name":"笔记本电脑","pid":7,"id":13},{"name":"台式电脑","pid":7,"id":14}];
+    //     var aParent = [];
+    //     for (var i in aTree){
+    //         if (aTree[i].pid == '0') {
+    //             aParent.push(aTree[i]);
+    //         }
+    //     }
+    //     function getParent(id, aTree) {
+    //         var aParent = [];
+    //         for (var i in aTree) {
+    //             if (aTree[i].pid == id) {
+    //                 aParent.push(aTree[i]);
+    //             }
+    //         }
+    //         return aParent;
+    //     }
+    //     var menu = '';
+    //     function makeTree(id, aTree) {
+    //         var topMenu = getParent(id, aTree);
+    //         if (topMenu.length > 0) {
+    //             for (var i in topMenu) {
+    //                 menu += '<a href="#">' + topMenu[i].name + '</a>';
+    //                 menu += '<ul>'
+    //                 makeTree(topMenu[i].id, aTree);
+    //                 menu += '</ul>'
+    //             }
+    //         }
+    //     }
+    //     makeTree(0, aTree);
+    //     $('body').append(menu);
+    // })
+    function shopTypeTree(dataTest)
+    {
+        tree.setData('.tree', dataTest);
+    }
+
+</script>
+
+</body>
+</html>

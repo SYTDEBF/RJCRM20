@@ -56,14 +56,14 @@
         <padding>
             <Insets top="20" left="50" right="50"/>
         </padding>
-        <TextField  prefWidth="250" maxWidth="250" promptText="账号" fx:id="name">
+        <TextField  prefWidth="250" maxWidth="250" promptText="账号" text="mz" fx:id="name">
         </TextField>
     </StackPane>
     <StackPane >
         <padding>
             <Insets top="20" left="50" right="50"/>
         </padding>
-        <TextField  prefWidth="250" maxWidth="250" promptText="密码" fx:id="password">
+        <TextField  prefWidth="250" maxWidth="250" promptText="密码" text="123456" fx:id="password">
         </TextField>
     </StackPane>
 

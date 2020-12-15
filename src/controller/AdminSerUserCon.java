@@ -2,16 +2,13 @@ package controller;
 
 import de.jensd.fx.glyphs.GlyphsDude;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
-import domian.Custom;
+import domain.Custom;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import serverimp.CustomServerImp;
-import util.InfoUtils;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 

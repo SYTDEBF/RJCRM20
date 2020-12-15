@@ -5,6 +5,7 @@
       <root url="jar://$PROJECT_DIR$/lib/fontawesomefx-8.9.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/mybatis-3.5.5.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/fastjson-1.2.75.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

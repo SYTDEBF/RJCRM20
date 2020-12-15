@@ -12,9 +12,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Main.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("CRM");
         Scene scene=new Scene(root, 400, 350);
-        primaryStage.initStyle(StageStyle.UNIFIED);
+        //primaryStage.initStyle(StageStyle.DECORATED);
         scene.getStylesheets().addAll(
                 "org/kordamp/bootstrapfx/bootstrapfx.css");
         primaryStage.setScene(scene);

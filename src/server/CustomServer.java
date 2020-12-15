@@ -1,6 +1,6 @@
 package server;
 
-import domian.Custom;
+import domain.Custom;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;

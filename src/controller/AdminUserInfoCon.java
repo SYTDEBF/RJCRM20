@@ -2,7 +2,7 @@ package controller;
 
 import de.jensd.fx.glyphs.GlyphsDude;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
-import domian.Custom;
+import domain.Custom;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -12,9 +12,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import serverimp.CustomServerImp;
-import ui.MyAdSerUserDia;
-import ui.MyAdUpUserDia;
-import ui.MyAdminAddDia;
+import ui.adminuser.MyAdSerUserDia;
+import ui.adminuser.MyAdUpUserDia;
+import ui.adminuser.MyAdminAddDia;
 import ui.MyDialog;
 import util.InfoUtils;
 
@@ -93,11 +93,7 @@ public class AdminUserInfoCon implements Initializable {
         test.setEditable(true);
         test.getColumns().addAll(firstNameCol, lastNameCol, emailCol,adressCol,creditCol,passWordCol);
 
-        GlyphsDude.setIcon(addBut, FontAwesomeIcon.PLUS,"17px");
-        GlyphsDude.setIcon(edBut, FontAwesomeIcon.EDIT,"17px");
-        GlyphsDude.setIcon(delBut, FontAwesomeIcon.TRASH,"17px");
-        GlyphsDude.setIcon(reBut,FontAwesomeIcon.REFRESH,"17px");
-        GlyphsDude.setIcon(serBut,FontAwesomeIcon.SEARCH,"17px");
+        AdStaffCon.butIcon(addBut, edBut, delBut, reBut, serBut);
         test.getSelectionModel().selectedItemProperty().addListener(
                 new ChangeListener<Custom>() {
                     @Override

@@ -1,11 +1,9 @@
 package serverimp;
 
-import domian.Admin;
-import domian.Custom;
+import domain.Admin;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import server.AdminServer;
-import server.CustomServer;
 import util.SqlSessionFactoryUtils;
 
 import java.io.IOException;

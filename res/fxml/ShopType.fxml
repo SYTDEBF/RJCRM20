@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane  orientation="VERTICAL"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="controller.ShopTypeCon"  >
+  <items>
+    <AnchorPane>
+         <children>
+            <VBox style="-fx-background-color:white" stylesheets="@/css/adminUI.css" prefWidth="1200">
+               <children>
+                  <StackPane>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Button fx:id="addBut" minWidth="80" onAction="#addCusUi">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="edBut" minWidth="80" onAction="#upCusUi">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="delBut" minWidth="80">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="reBut" minWidth="80">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <TextField fx:id="serText" promptText="搜索">
+                                 <HBox.margin>
+                                    <Insets left="500" top="2" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="serBut" minWidth="80" onAction="#serCusUi">
+                                 <HBox.margin>
+                                    <Insets left="10" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="4" right="1" top="5" />
+                     </padding>
+                  </StackPane>
+                  <StackPane prefHeight="250.0" prefWidth="600.0" maxHeight="250">
+                     <children>
+                        <TableView fx:id="test" />
+                     </children>
+                     <padding>
+                        <Insets left="5" top="5" />
+                     </padding>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+    </AnchorPane>
+    <AnchorPane >
+         <children>
+            <WebView prefHeight="500" prefWidth="1200" fx:id="we"/>
+         </children>
+    </AnchorPane>
+  </items>
+</SplitPane>
