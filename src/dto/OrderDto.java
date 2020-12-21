@@ -8,6 +8,7 @@ public class OrderDto {
     private float shop_price;
     private String staff_name;
     private String staff_depart;
+    Object as;
     public Integer getId() {
         return id;
     }

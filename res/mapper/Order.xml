@@ -16,9 +16,13 @@
             tb_custom d,
             tb_shoptype e
         WHERE
-            c.custom_id = a.id
-          AND c.custom_id = b.id
+            c.staff_id = b.id
+          AND c.shop_id= a.id
           AND c.custom_id = d.id
-          And  b.staff_shop_type=e.id
+          and   b.staff_shop_type=e.id
     </select>
+    <insert id="addOrder" parameterType="order" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_order(custom_id, shop_id, staff_id, create_time) VALUE
+        (#{custom_id}, #{shop_id}, #{staff_id}, #{create_time})
+    </insert>
 </mapper>

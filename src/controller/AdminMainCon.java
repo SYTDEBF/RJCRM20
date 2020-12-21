@@ -35,23 +35,25 @@ public class AdminMainCon implements Initializable {
         leftPane.getChildren().addAll(text);
         Tab tab=new Tab("用户信息");
         Tab welTab=new Tab("首页");
+        Tab orderTab=new Tab("订单信息");
         Tab shopTypeTab=new Tab("商品类型");
         Tab staffTab=new Tab("员工信息");
         try {
+            StackPane stackPane=FXMLLoader.load(getClass().getResource("/fxml/AdminWel.fxml"));
+            welTab.setContent(stackPane);
             VBox vBox= FXMLLoader.load(getClass().getResource("/fxml/AdminUserInfo.fxml"));
             tab.setContent(vBox);
             VBox staffVBox= FXMLLoader.load(getClass().getResource("/fxml/AdminStaff.fxml"));
             staffTab.setContent(staffVBox);
-            GridPane gridPane=FXMLLoader.load(getClass().getResource("/fxml/AdminWel.fxml"));
-            gridPane.getStylesheets().addAll(
-                    "org/kordamp/bootstrapfx/bootstrapfx.css");
+
             SplitPane splitPane = FXMLLoader.load(getClass().getResource("/fxml/ShopType.fxml"));
             shopTypeTab.setContent(splitPane);
-            welTab.setContent(gridPane);
+            VBox orderVBox= FXMLLoader.load(getClass().getResource("/fxml/AdminOrder.fxml"));
+            orderTab.setContent(orderVBox);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        wordText1.getTabs().addAll(welTab,tab,staffTab,shopTypeTab);
+        wordText1.getTabs().addAll(welTab,tab,staffTab,shopTypeTab,orderTab);
     }
 
 }

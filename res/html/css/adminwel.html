@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!--    <link rel="stylesheet" href="assets/css/gool.css">-->
+
+    <link rel="stylesheet" href="font-awesome.min.css">
+
+</head>
+<body>
+<div class="row">
+    <div class="col-md-6 col-xl-3 mb-4">
+        <div class="card shadow border-left-primary py-2">
+            <div class="card-body">
+                <div class="row align-items-center no-gutters">
+                    <div class="col mr-2">
+                        <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>用户总数</span></div>
+                        <div class="text-dark font-weight-bold h5 mb-0" id="cus_con"><span>无数据</span></div>
+                    </div>
+                    <div class="col-auto"><i class="fa fa-calendar fa-2x text-gray-300"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3 mb-4">
+        <div class="card shadow border-left-primary py-2">
+            <div class="card-body">
+                <div class="row align-items-center no-gutters">
+                    <div class="col mr-2">
+                        <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>员工总数</span></div>
+                        <div class="text-dark font-weight-bold h5 mb-0" id="staff_cou"><span>无数据</span></div>
+                    </div>
+                    <div class="col-auto"><i class="fa fa-calendar fa-2x text-gray-300"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3 mb-4">
+        <div class="card shadow border-left-primary py-2">
+            <div class="card-body">
+                <div class="row align-items-center no-gutters">
+                    <div class="col mr-2">
+                        <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>订单总数</span></div>
+                        <div class="text-dark font-weight-bold h5 mb-0" id="order_cou"><span>无数据</span></div>
+                    </div>
+                    <div class="col-auto"><i class="fa fa-calendar fa-2x text-gray-300"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3 mb-4">
+        <div class="card shadow border-left-primary py-2">
+            <div class="card-body">
+                <div class="row align-items-center no-gutters">
+                    <div class="col mr-2">
+                        <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>商品数</span></div>
+                        <div class="text-dark font-weight-bold h5 mb-0" id="shop_cou"><span>无数据</span></div>
+                    </div>
+                    <div class="col-auto"><i class="fa fa-calendar fa-2x text-gray-300"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xl-3 mb-4">
+        <div class="card shadow border-left-primary py-2">
+            <div class="card-body">
+                <div class="row align-items-center no-gutters">
+                    <div class="col mr-2">
+                        <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>商品类型数</span></div>
+                        <div class="text-dark font-weight-bold h5 mb-0" id="shop_type_cou"><span>无数据</span></div>
+                    </div>
+                    <div class="col-auto"><i class="fa fa-calendar fa-2x text-gray-300"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function $(ele)
+    {
+        return document.getElementById(ele);
+    }
+    function getCusCou(num)
+    {
+        $("cus_con").innerText=num;
+    }
+    function getStaffCou(num)
+    {
+        $("staff_cou").innerText=num;
+    }
+    function getOrderCou(num)
+    {
+        $("order_cou").innerText=num;
+    }
+    function getShopCou(num)
+    {
+        $("shop_cou").innerText=num;
+    }
+    function getShopTypeCou(num)
+    {
+        $("shop_type_cou").innerText=num;
+    }
+</script>
+</body>
+</html>

@@ -86,8 +86,6 @@ public class ShopTypeCon implements Initializable {
             List<ShopType> shopTypes = customServerImp.findAll();
             users.addAll(shopTypes);
 
-
-
         test.setItems(users);
         test.setEditable(true);
         test.getColumns().addAll(firstNameCol, lastNameCol, emailCol, adressCol);
