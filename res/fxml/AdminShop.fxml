@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox style="-fx-background-color:white" stylesheets="@/css/adminUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adcon.AdShopCon">
+    <children>
+        <StackPane>
+            <padding>
+                <Insets left="4" right="1" top="5" />
+            </padding>
+            <children>
+                <HBox>
+                    <children>
+                        <Button fx:id="addBut" minWidth="80" onAction="#addShopUi">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="edBut" minWidth="80" onAction="#upShopUi">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="delBut" minWidth="80">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="reBut" minWidth="80">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <TextField fx:id="serText" promptText="搜索">
+                            <HBox.margin>
+                                <Insets left="500" top="2" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button fx:id="serBut" minWidth="80" onAction="#serShopUi">
+                            <HBox.margin>
+                                <Insets left="10" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+
+
+                </HBox>
+            </children>
+        </StackPane>
+        <StackPane prefHeight="400.0" prefWidth="600.0">
+            <padding>
+                <Insets left="5" top="5" />
+            </padding>
+            <children>
+                <TableView fx:id="test">
+
+                </TableView>
+            </children>
+        </StackPane>
+    </children>
+</VBox>

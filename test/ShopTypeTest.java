@@ -58,7 +58,7 @@ public class ShopTypeTest {
     public void toJS(String as)
     {
         String []asls=as.split(" ");
-        String a[]=new String[asls.length];
+        String[] a =new String[asls.length];
         a[0]=asls[0];
         String sre="";
         for (int k=1;k<=3;k++)

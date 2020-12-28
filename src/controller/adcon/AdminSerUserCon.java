@@ -1,4 +1,4 @@
-package controller;
+package controller.adcon;
 
 import de.jensd.fx.glyphs.GlyphsDude;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
@@ -51,7 +51,7 @@ public class AdminSerUserCon implements Initializable {
         passWordCol.setCellValueFactory(
                 new PropertyValueFactory<>("custom_password"));
 
-        serre.setItems((ObservableList<Custom>)Controller.primaryStage.getUserData());
+        serre.setItems((ObservableList<Custom>) Controller.primaryStage.getUserData());
         serre.setEditable(true);
         serre.getColumns().addAll(firstNameCol, lastNameCol, emailCol,adressCol,creditCol,passWordCol);
 

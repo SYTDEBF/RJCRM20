@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="server.CustomServer">
-    
+<mapper namespace="server.ShopServer">
+    <select id="getAllShop" resultType="shop">
+        select a.id,shop_name,shop_date,b.typename as shop_type,shop_price from tb_shop a,tb_shoptype b
+        where a.shop_type=b.id;
+    </select>
+    <select id="getShopByIdOrName" resultType="shop" parameterType="java.lang.String">
+        select * from tb_shop where tb_shop.shop_name like '%${key}%' or id like '%${key}%'
+    </select>
 </mapper>

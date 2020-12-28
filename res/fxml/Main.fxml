@@ -17,7 +17,7 @@
       prefHeight="700"
       minHeight="700"
       prefWidth="350"
-      fx:controller="controller.Controller"
+      fx:controller="controller.adcon.Controller"
       fx:id="mainRoot"
       stylesheets="@/css/Main.css"
       style="-fx-background-color:white;"

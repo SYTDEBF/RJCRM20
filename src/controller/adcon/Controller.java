@@ -1,4 +1,4 @@
-package controller;
+package controller.adcon;
 
 import domain.Admin;
 import javafx.fxml.FXML;
@@ -7,8 +7,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import serverimp.AdminServerImp;
 import util.InfoUtils;
 
@@ -30,7 +31,7 @@ public class Controller  {
 
     static Stage primaryStage = new Stage();
     public void initialize() {
-        Font font=new Font("STSong",24);
+        Font font=Font.font("MicrosoftYaHei", FontWeight.BOLD, FontPosture.REGULAR,24);
         cLabel.setFont(font);
 
 
@@ -62,11 +63,12 @@ public class Controller  {
             Parent root = null;
             try {
                 root = FXMLLoader.load(getClass().getResource("/fxml/AdminUI.fxml"));
+                root.setStyle("-fx-font-family:'微软雅黑';");
             } catch (IOException e) {
                 e.printStackTrace();
             }
             primaryStage.setTitle("CRM");
-            primaryStage.initStyle(StageStyle.UNIFIED);
+
             Scene scene = new Scene(root);
             scene.getStylesheets().addAll(
                     "org/kordamp/bootstrapfx/bootstrapfx.css");

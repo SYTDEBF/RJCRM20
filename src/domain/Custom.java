@@ -1,6 +1,7 @@
 package domain;
 
 public class Custom {
+
     private Integer id;
     private String custom_name;
     private String custom_phone;
@@ -70,13 +71,9 @@ public class Custom {
 
     @Override
     public String toString() {
-        return "Custom{" +
-                "id=" + id +
-                ", custom_name='" + custom_name + '\'' +
-                ", custom_phone='" + custom_phone + '\'' +
-                ", custom_address='" + custom_address + '\'' +
-                ", custom_credit=" + custom_credit +
-                ", custom_password='" + custom_password + '\'' +
-                '}';
+        return "" +
+                "编号:" + id +
+                " 姓名:" + custom_name
+                ;
     }
 }

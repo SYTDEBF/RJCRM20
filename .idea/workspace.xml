@@ -27,39 +27,101 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="第三次提交">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RJCRM_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/AdAddOrder.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/AdminOrder.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/html/css/adminwel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/html/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/mapper/adminsta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/AdAddOrderCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/AdminOrderCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/AdminWelCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/DataCouDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/AdminStaSer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverimp/AdminStaSerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/adorder/MyAdOrderDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ui/ASDD.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="电话号码判断修正">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/dom4j_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jaxen_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_crm.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dom4j-2.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jaxen-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/css/asd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/fxml/AdSetting.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/fxml/AdminShop.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/img/crm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/adcon/AdShopCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/adcon/AdminSettingCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/ShopServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/serverimp/ShopServerImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/MyConfigUpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/MySqlConUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/ReflectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RJCRM_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RJCRM_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RJCRM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RJCRM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_crm01.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RJCRM/config/Mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/config/Mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/controller/AdminMainCon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/controller/AdminMainCon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/controller/AdminAddUserCon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/controller/AdminMainCon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/controller/AdminSerUserCon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/controller/AdminUpUserCon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/controller/AdminUserInfoCon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/controller/AdminUserInfoCon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/controller/Controller.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RJCRM/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/css/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/css/TabPane.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/css/TabPane.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RJCRM/css/adminUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/css/adminUI.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminAddUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminAddUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminSerUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminSerUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminUpUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminUpUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminUserInfo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/fxml/AdminUserInfo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/fxml/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/mapper/Custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/mapper/Custom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/mapper/Shop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/mapper/Shop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/sample/ADminUiTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/sample/SDDTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/util/FontawesomeWithJavaFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/util/FontawesomeWithJavaFX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/util/InfoUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/util/InfoUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/config/Mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/config/Mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/css/TabPane.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/TabPane.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/css/adminUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/adminUI.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdAddOrder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdAddOrder.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminAddST.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminAddST.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminAddUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminAddUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminOrder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminOrder.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminSerUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminSerUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminStaff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminStaff.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminUpUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminUpUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminUserInfo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminUserInfo.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/fxml/AdminWel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminWel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/mapper/Order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/Order.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/AdminMainCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AdminMainCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ShopTypeCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ShopTypeCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/ShopType.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/ShopType.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/html/css/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/html/css/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/img/avtAdmin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/mapper/Custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/Custom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/mapper/Shop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/Shop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/mapper/staff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/staff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdAddOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdAddOrderCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdStaffCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdStaffCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminAddUserCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminAddUserCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminMainCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminMainCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminOrderCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminSTCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminSTCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminSerUserCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminSerUserCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminUpUserCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminUpUserCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminUserInfoCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminUserInfoCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminWelCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminWelCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ShopTypeCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/ShopTypeCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Custom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Custom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ADminUiTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/SDDTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/AdminStaSer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/AdminStaSer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/CustomServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/CustomServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/OrderServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/OrderServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/ShopTypeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ShopTypeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/StaffServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/StaffServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/FontawesomeWithJavaFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/FontawesomeWithJavaFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/TreeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/TreeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/QWE.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/QWE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ShopTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ShopTypeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,9 +176,10 @@
         <option value="JavaScript File" />
         <option value="JavaFXApplication" />
         <option value="Tag Library Descriptor" />
-        <option value="Interface" />
         <option value="HTML File" />
         <option value="mybatis" />
+        <option value="CSS File" />
+        <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Class" />
       </list>
@@ -131,8 +194,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/controller/AdminOrderCon.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/controller/AdminUserInfoCon.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/controller/adcon/AdminOrderCon.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/controller/adcon/AdminUserInfoCon.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/out/production/RJCRM/fxml/AdminStaff.fxml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
@@ -176,29 +239,38 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/html/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="构件" />
+    <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20344828" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/res/html/css" />
-      <recent name="$PROJECT_DIR$/res/mapper" />
-      <recent name="$PROJECT_DIR$/res/fxml" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/res/font" />
       <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/res/img" />
+      <recent name="$PROJECT_DIR$/res/html/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/controller/adcon" />
       <recent name="$PROJECT_DIR$/res/html/css" />
       <recent name="$PROJECT_DIR$/res/html" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="controller" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="controller" />
@@ -231,6 +303,28 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
+    <configuration name="ASD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.ASD" />
+      <module name="RJCRM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ASDD (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ASDD" />
+      <module name="RJCRM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ASDD" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ui.ASDD" />
       <module name="RJCRM" />
@@ -239,49 +333,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="RJCRM" />
-      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/javafx-sdk-16/lib --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.web,javafx.media,javafx.graphics,javafx.swing" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OrderTest" />
+    <configuration name="AdminConAdTset" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AdminConAdTset" />
       <module name="RJCRM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sdd" />
+    <configuration name="MyConfigUpUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.MyConfigUpUtil" />
       <module name="RJCRM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopTypeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ShopTypeTest" />
+    <configuration name="MySqlConUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.MySqlConUtil" />
       <module name="RJCRM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="asd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="asd" />
-      <module name="RJCRM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -305,10 +393,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RJCRM.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/RJCRM_jar/RJCRM.jar" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -331,22 +415,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JAR 应用程序.RJCRM.jar" />
       <item itemvalue="应用程序.Main" />
       <item itemvalue="应用程序.ASDD" />
       <item itemvalue="应用程序.sd" />
-      <item itemvalue="应用程序.ShopTypeTest" />
-      <item itemvalue="应用程序.OrderTest" />
-      <item itemvalue="应用程序.Sdd" />
-      <item itemvalue="应用程序.asd" />
+      <item itemvalue="应用程序.ASD" />
+      <item itemvalue="应用程序.AdminConAdTset" />
+      <item itemvalue="应用程序.MyConfigUpUtil" />
+      <item itemvalue="应用程序.ASDD (1)" />
+      <item itemvalue="应用程序.MySqlConUtil" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR 应用程序.RJCRM.jar" />
-        <item itemvalue="应用程序.asd" />
-        <item itemvalue="应用程序.Sdd" />
-        <item itemvalue="应用程序.OrderTest" />
-        <item itemvalue="应用程序.ShopTypeTest" />
+        <item itemvalue="应用程序.MySqlConUtil" />
+        <item itemvalue="应用程序.ASDD (1)" />
+        <item itemvalue="应用程序.MyConfigUpUtil" />
+        <item itemvalue="应用程序.ASD" />
+        <item itemvalue="应用程序.AdminConAdTset" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +505,32 @@
       <workItem from="1608449806644" duration="47000" />
       <workItem from="1608520684812" duration="436000" />
       <workItem from="1608524186028" duration="223000" />
-      <workItem from="1608531736292" duration="810000" />
+      <workItem from="1608531736292" duration="2704000" />
+      <workItem from="1608561806804" duration="891000" />
+      <workItem from="1608562905448" duration="1044000" />
+      <workItem from="1608606683970" duration="86000" />
+      <workItem from="1608619744513" duration="22000" />
+      <workItem from="1608619790296" duration="2322000" />
+      <workItem from="1608623196131" duration="1316000" />
+      <workItem from="1608626882991" duration="390000" />
+      <workItem from="1608635263660" duration="4557000" />
+      <workItem from="1608710194170" duration="3280000" />
+      <workItem from="1608722310113" duration="3827000" />
+      <workItem from="1608727075112" duration="2460000" />
+      <workItem from="1608865483984" duration="893000" />
+      <workItem from="1608871318636" duration="1604000" />
+      <workItem from="1608884458863" duration="5189000" />
+      <workItem from="1608896123770" duration="145000" />
+      <workItem from="1608896276738" duration="924000" />
+      <workItem from="1608898530293" duration="5222000" />
+      <workItem from="1608908357162" duration="1710000" />
+      <workItem from="1608948001872" duration="1507000" />
+      <workItem from="1608951450061" duration="2545000" />
+      <workItem from="1609050509744" duration="5826000" />
+      <workItem from="1609070715841" duration="8244000" />
+      <workItem from="1609142719383" duration="13000" />
+      <workItem from="1609142755456" duration="97000" />
+      <workItem from="1609159296618" duration="7485000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1605579615573</created>
@@ -458,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607998773694</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="电话号码判断修正">
+      <created>1608532867476</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608532867476</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +600,8 @@
     <MESSAGE value="lib修改提交" />
     <MESSAGE value="数据库sql文件" />
     <MESSAGE value="第三次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第三次提交" />
+    <MESSAGE value="电话号码判断修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="电话号码判断修正" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -493,6 +610,31 @@
           <properties class="java.lang.NumberFormatException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/util/MySqlConUtil.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/util/MySqlConUtil.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/util/MySqlConUtil.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/util/MySqlConUtil.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/util/MySqlConUtil.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

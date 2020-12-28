@@ -6,6 +6,6 @@ import dto.OrderDto;
 import java.util.List;
 
 public interface OrderServer {
-    public List<OrderDto> getAllOrder();
-    public int addOrder(Order order);
+    List<OrderDto> getAllOrder();
+    int addOrder(Order order);
 }

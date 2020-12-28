@@ -5,6 +5,9 @@
         select a.id,staff_name,staff_depart,b.typename,staff_salary from tb_staff a,tb_shoptype b
         where a.staff_shop_type=b.id;
     </select>
+    <select id="getStaffByIdOrName" resultType="staff" parameterType="java.lang.String">
+        select * from tb_staff  where tb_staff.staff_name like '%${key}%' or id like '%${key}%'
+    </select>
 </mapper>
 
 

@@ -1,6 +1,5 @@
-package controller;
+package controller.adcon;
 
-import domain.Custom;
 import dto.OrderDto;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -10,12 +9,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import serverimp.CustomServerImp;
 import serverimp.OrderServerImp;
 import ui.MyDialog;
 import ui.adorder.MyAdOrderDia;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;

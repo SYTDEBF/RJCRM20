@@ -10,7 +10,7 @@
 
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-            style="-fx-background-color:white" stylesheets="@/css/adminUI.css" fx:controller="controller.AdminSerUserCon">
+            style="-fx-background-color:white" stylesheets="@/css/adminUI.css" fx:controller="controller.adcon.AdminSerUserCon">
    <left>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" style="-fx-background-color: rgb(248,246,231);">
 

@@ -20,6 +20,6 @@
         select * from tb_custom
     </select>
     <select id="findCustomsByIdOrName" resultType="custom" parameterType="java.lang.String">
-        select * from tb_custom  where custom_name like '%${keyword}%' or id like '%${keyword}%'
+        select id,custom_name from tb_custom  where tb_custom.custom_name like '%${keyword}%' or id like '%${keyword}%'
     </select>
 </mapper>

@@ -8,7 +8,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:white" stylesheets="@/css/adminUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdAddOrderCon">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color:white" stylesheets="@/css/adminUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adcon.AdAddOrderCon">
     <left>
         <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgb(248,246,231);" BorderPane.alignment="CENTER">
 
@@ -58,7 +58,42 @@
                         <Insets left="30.0" top="10.0" />
                     </VBox.margin>
                 </Button>
+            <Label text="搜索工具">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cusser" onKeyPressed="#cusHandle" promptText="客户搜索">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+
+            <TextField fx:id="shopser" promptText="商品搜索" onKeyPressed="#shopHandle">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="staffser" promptText="员工搜索" onKeyPressed="#staffHandle">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false"  text="清空结果">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Button>
             </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
         </VBox>
     </center>
+   <right>
+      <ListView fx:id="serre" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
 </BorderPane>

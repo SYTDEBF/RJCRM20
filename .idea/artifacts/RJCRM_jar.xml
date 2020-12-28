@@ -3,6 +3,11 @@
     <output-path>$PROJECT_DIR$/out/artifacts/RJCRM_jar</output-path>
     <root id="archive" name="RJCRM.jar">
       <element id="module-output" name="RJCRM" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/bootstrapfx-core-0.2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/fontawesomefx-8.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mybatis-3.5.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/fastjson-1.2.75.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-16/lib/src.zip" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-16/lib/javafx-swt.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-16/lib/javafx.web.jar" path-in-jar="/" />
@@ -12,11 +17,6 @@
       <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-16/lib/javafx.swing.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-16/lib/javafx.controls.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-16/lib/javafx.graphics.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/bootstrapfx-core-0.2.4.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/fontawesomefx-8.9.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mybatis-3.5.5.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/fastjson-1.2.75.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

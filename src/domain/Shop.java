@@ -23,13 +23,11 @@ public class Shop {
 
     @Override
     public String toString() {
-        return "Shop{" +
-                "id=" + id +
-                ", shop_name='" + shop_name + '\'' +
-                ", shop_date=" + shop_date +
-                ", shop_type='" + shop_type + '\'' +
-                ", shop_price=" + shop_price +
-                '}';
+        return
+                "编号:" + id +
+                "商品名称:" + shop_name;
+
+
     }
 
     public Shop(String shop_name, Date shop_date, String shop_type, float shop_price) {

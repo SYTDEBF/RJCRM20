@@ -19,6 +19,6 @@ import java.lang.annotation.Target;
 @Target(value = {ElementType.FIELD})
 public @interface TreeType {
     //注解成员，default表示默认值
-    public String value() default "";
-    public String level() default "";
+    String value() default "";
+    String level() default "";
 }

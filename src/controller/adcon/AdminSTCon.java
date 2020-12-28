@@ -1,4 +1,4 @@
-package controller;
+package controller.adcon;
 
 import com.alibaba.fastjson.JSONObject;
 import de.jensd.fx.glyphs.GlyphsDude;
@@ -58,7 +58,7 @@ public class AdminSTCon implements Initializable {
 
                         TreeObjectUtils<ShopType> shopTypeTreeObjectUtils=new TreeObjectUtils<>();
                         List<ShopType> ass=shopTypeTreeObjectUtils.get1(shopTypeServerImp.findAll());
-                        WebView we=(WebView)Controller.primaryStage.getUserData();
+                        WebView we=(WebView) Controller.primaryStage.getUserData();
 
 
                         we.getEngine().reload();

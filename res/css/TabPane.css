@@ -74,5 +74,12 @@
 .tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
     -fx-border-radius: 0px;
     -fx-border-width: 0px 0px 3px 0px;
-    -fx-border-color: rgba(16,217,30,0.8);
+    -fx-border-color: rgba(255,255,255,0.8);
+}
+.tab *.tab-label {
+    -fx-rotate: 90;
+}
+
+.tab {
+    -fx-padding: 4.0em -3em;
 }

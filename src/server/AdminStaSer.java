@@ -10,5 +10,5 @@ public interface AdminStaSer {
      * 获取员工总数
      * @return
      */
-    public List<DataCouDto> getAllCou();
+    List<DataCouDto> getAllCou();
 }

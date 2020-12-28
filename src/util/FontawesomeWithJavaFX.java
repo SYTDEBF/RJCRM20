@@ -82,7 +82,7 @@ public class FontawesomeWithJavaFX  {
     public static Label httpCreateGlyphLabel(Font font, String glyphName, int sizeFactor,String textString) {
         Label label = new Label();
         label.setFont(Font.font(font.getFamily(), 1 * sizeFactor));
-        label.setText(String.valueOf(FontawesomeWithJavaFX.GLYPH_MAP.get(glyphName))+" HTTPS");
+        label.setText(FontawesomeWithJavaFX.GLYPH_MAP.get(glyphName) +" HTTPS");
         return label;
     }
 

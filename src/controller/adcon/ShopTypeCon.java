@@ -1,8 +1,6 @@
-package controller;
+package controller.adcon;
 
 import com.alibaba.fastjson.JSONObject;
-import de.jensd.fx.glyphs.GlyphsDude;
-import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import domain.Custom;
 import domain.ShopType;
 import javafx.collections.FXCollections;

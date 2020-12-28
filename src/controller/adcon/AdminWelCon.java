@@ -1,4 +1,4 @@
-package controller;
+package controller.adcon;
 
 import com.alibaba.fastjson.JSONObject;
 import dto.DataCouDto;

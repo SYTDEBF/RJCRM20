@@ -1,7 +1,5 @@
-package controller;
+package controller.adcon;
 
-import de.jensd.fx.glyphs.GlyphsDude;
-import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import domain.Custom;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -52,8 +50,7 @@ public class AdminUserInfoCon implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         TableColumn firstNameCol = new TableColumn("编号");
         firstNameCol.setMinWidth(100);
-        firstNameCol.setCellValueFactory(
-                new PropertyValueFactory<>("id"));
+        firstNameCol.setCellValueFactory(new PropertyValueFactory<>("id"));
 
         TableColumn lastNameCol = new TableColumn("姓名");
         lastNameCol.setMinWidth(100);
@@ -78,6 +75,7 @@ public class AdminUserInfoCon implements Initializable {
         passWordCol.setMinWidth(200);
         passWordCol.setCellValueFactory(
                 new PropertyValueFactory<>("custom_password"));
+
 
 
         try {

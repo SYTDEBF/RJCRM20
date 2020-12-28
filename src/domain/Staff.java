@@ -49,12 +49,9 @@ public class Staff {
 
     @Override
     public String toString() {
-        return "Staff{" +
-                "id=" + id +
-                ", staff_name='" + staff_name + '\'' +
-                ", staff_depart='" + staff_depart + '\'' +
-                ", staff_shop_type='" + typename+ '\'' +
-                ", staff_salary=" + staff_salary +
-                '}';
+        return
+                "编号:" + id +
+                " 员工姓名:" + staff_name;
+
     }
 }

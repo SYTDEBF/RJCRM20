@@ -16,7 +16,7 @@ public class QWE extends Application {
     private JSObject javascriptConnector;
 
     /** 用于从Javascript引擎进行通信。 */
-    private JavaConnector javaConnector = new JavaConnector();;
+    private final JavaConnector javaConnector = new JavaConnector();
 
     @Override
     public void start(Stage primaryStage) throws Exception {
