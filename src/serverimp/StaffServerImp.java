@@ -1,6 +1,7 @@
 package serverimp;
 
 import domain.Staff;
+import dto.StaffDto;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import server.StaffServer;
@@ -17,10 +18,10 @@ public class StaffServerImp implements  StaffServer{
      * @return
      */
     @Override
-    public List<Staff> getAllStaff() {
+    public List<StaffDto> getAllStaff() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         StaffServer shopTypeServerMapper = sqlSession.getMapper(StaffServer.class);
-        List<Staff> staffList=shopTypeServerMapper.getAllStaff();
+        List<StaffDto> staffList=shopTypeServerMapper.getAllStaff();
         sqlSession.commit();
         sqlSession.close();
         return staffList;
@@ -33,10 +34,62 @@ public class StaffServerImp implements  StaffServer{
      * @return
      */
     @Override
-    public List<Staff> getStaffByIdOrName(String key) {
+    public List<StaffDto> getStaffByIdOrName(String key) {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         StaffServer shopTypeServerMapper = sqlSession.getMapper(StaffServer.class);
-        List<Staff> staffList=shopTypeServerMapper.getStaffByIdOrName(key);
+        List<StaffDto> staffList=shopTypeServerMapper.getStaffByIdOrName(key);
+        sqlSession.commit();
+        sqlSession.close();
+        return staffList;
+    }
+
+    /**
+     * 插入新员工
+     *
+     * @param staff
+     * @return
+     */
+    @Override
+    public int addStaff(Staff staff) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        StaffServer shopTypeServerMapper = sqlSession.getMapper(StaffServer.class);
+        int n =shopTypeServerMapper.addStaff(staff);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+    /**
+     * 删除员工
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public int deleteStaff(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        StaffServer shopTypeServerMapper = sqlSession.getMapper(StaffServer.class);
+        int n=shopTypeServerMapper.deleteStaff(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+    @Override
+    public int upStaff(Staff staff) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        StaffServer shopTypeServerMapper = sqlSession.getMapper(StaffServer.class);
+        int n=shopTypeServerMapper.upStaff(staff);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+    @Override
+    public List<Staff> getStaffById(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        StaffServer shopTypeServerMapper = sqlSession.getMapper(StaffServer.class);
+        List<Staff> staffList=shopTypeServerMapper.getStaffById(id);
         sqlSession.commit();
         sqlSession.close();
         return staffList;

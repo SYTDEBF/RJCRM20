@@ -1,10 +1,9 @@
 package serverimp;
 
 import domain.Shop;
-import dto.OrderDto;
+import dto.ShopDto;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import server.OrderServer;
 import server.ShopServer;
 import util.SqlSessionFactoryUtils;
 
@@ -20,10 +19,10 @@ public class ShopServerImp implements ShopServer {
      * @return List<Shop>
      */
     @Override
-    public List<Shop> getAllShop() {
+    public List<ShopDto> getAllShop() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         ShopServer shopServer = sqlSession.getMapper(ShopServer.class);
-        List<Shop> shops =shopServer.getAllShop();
+        List<ShopDto> shops =shopServer.getAllShop();
         sqlSession.commit();
         sqlSession.close();
         return shops;
@@ -43,6 +42,59 @@ public class ShopServerImp implements ShopServer {
         sqlSession.commit();
         sqlSession.close();
         return shops;
+    }
+
+    /**
+     * 新增商品
+     *
+     * @param shop
+     * @return
+     */
+    @Override
+    public int addShop(Shop shop) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        ShopServer shopServer = sqlSession.getMapper(ShopServer.class);
+        int n =shopServer.addShop(shop);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+    /**
+     * 更新商品
+     *
+     * @param shop
+     * @return
+     */
+    @Override
+    public int upShop(Shop shop) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        ShopServer shopServer = sqlSession.getMapper(ShopServer.class);
+        int n =shopServer.upShop(shop);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+    /**
+     * 删除商品
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public int deleteShop(Integer id) {
+        return 0;
+    }
+
+    @Override
+    public Shop getShopById(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        ShopServer shopServer = sqlSession.getMapper(ShopServer.class);
+        Shop shop =shopServer.getShopById(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return shop;
     }
 
 

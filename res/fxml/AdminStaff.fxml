@@ -18,12 +18,12 @@
             <Insets top="5" left="4" right="1"/>
         </padding>
         <HBox>
-            <Button  fx:id="addBut" minWidth="80" onAction="#addCusUi">
+            <Button  fx:id="addBut" minWidth="80" onAction="#addStaffUi">
                 <HBox.margin>
                     <Insets  right="10.0"  />
                 </HBox.margin>
             </Button>
-            <Button  fx:id="edBut" minWidth="80" onAction="#upCusUi">
+            <Button  fx:id="edBut" minWidth="80" onAction="#upStaUi">
                 <HBox.margin>
                     <Insets  right="10.0"  />
                 </HBox.margin>
@@ -33,7 +33,7 @@
                     <Insets  right="10.0"  />
                 </HBox.margin>
             </Button>
-            <Button  fx:id="reBut" minWidth="80">
+            <Button  fx:id="reBut" minWidth="80" onAction="#refreshStaff">
                 <HBox.margin>
                     <Insets  right="10.0"  />
                 </HBox.margin>
@@ -43,7 +43,7 @@
                     <Insets  left="500"   top="2"/>
                 </HBox.margin>
             </TextField>
-            <Button  fx:id="serBut" minWidth="80" onAction="#serCusUi">
+            <Button  fx:id="serBut" minWidth="80" onAction="#serStaUi">
                 <HBox.margin>
                     <Insets  left="10"  />
                 </HBox.margin>

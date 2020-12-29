@@ -1,6 +1,7 @@
 package controller.adcon;
 
 import domain.Custom;
+import dto.OrderDto;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -10,6 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import serverimp.CustomServerImp;
+import serverimp.OrderServerImp;
 import ui.adminuser.MyAdSerUserDia;
 import ui.adminuser.MyAdUpUserDia;
 import ui.adminuser.MyAdminAddDia;
@@ -149,6 +151,19 @@ public class AdminUserInfoCon implements Initializable {
             dialog.showAndWait();
         }
 
+    }
+    public void refreshCus()
+    {
+        CustomServerImp customServerImp= null;
+        try {
+            customServerImp = new CustomServerImp();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        List<Custom> customList = customServerImp.getAllCustoms();
+        users.clear();
+        users.addAll(customList);
+        test.refresh();
     }
 
 

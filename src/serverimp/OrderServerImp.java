@@ -32,4 +32,52 @@ public class OrderServerImp implements OrderServer {
         sqlSession.close();
         return n;
     }
+
+    /**
+     * 删除订单通过id
+     *
+     * @param id 订单编号
+     * @return int
+     */
+    @Override
+    public int deleteOrder(int id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        OrderServer orderServerMapper = sqlSession.getMapper(OrderServer.class);
+        int n =orderServerMapper.deleteOrder(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+    /**
+     * 更新订单 通过编号
+     *
+     * @param order 订单
+     * @return
+     */
+    @Override
+    public int updateOrder(Order order) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        OrderServer orderServerMapper = sqlSession.getMapper(OrderServer.class);
+        int n =orderServerMapper.updateOrder(order);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+    /**
+     * 查询订单通过id
+     *
+     * @param id 订单编号
+     * @return
+     */
+    @Override
+    public List<Order> getOrderById(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        OrderServer orderServerMapper = sqlSession.getMapper(OrderServer.class);
+        List<Order> orderDtos=orderServerMapper.getOrderById(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return orderDtos;
+    }
 }

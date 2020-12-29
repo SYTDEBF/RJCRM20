@@ -28,7 +28,7 @@ public class MyAdUpUserDia extends MyDialog {
         }
         dialog.getDialogPane().setContent(borderPane);
         dialog.initOwner(stage);
-        dialog.initStyle(StageStyle.UNIFIED);
+
         return dialog;
     }
 }

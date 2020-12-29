@@ -4,6 +4,8 @@ import domain.Custom;
 import domain.Order;
 import domain.Shop;
 import domain.Staff;
+import dto.OrderDto;
+import dto.StaffDto;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -92,7 +94,7 @@ public class AdAddOrderCon implements Initializable {
                 for (Custom c :customList
                 ) {
                     serre.getItems().add(c);
-                    System.out.println("233"+c);
+
                 }
             }else
             {
@@ -127,9 +129,9 @@ public class AdAddOrderCon implements Initializable {
             serre.getItems().clear();
             StaffServerImp staffServerImp = null;
             staffServerImp = new StaffServerImp();
-            List<Staff> staffList = staffServerImp.getStaffByIdOrName(staffser.getText().trim());
+            List<StaffDto> staffList = staffServerImp.getStaffByIdOrName(staffser.getText().trim());
             if (staffList.size()!=0){
-                for ( Staff c:staffList
+                for ( StaffDto c:staffList
                 ) {
                     serre.getItems().add(c);
                 }

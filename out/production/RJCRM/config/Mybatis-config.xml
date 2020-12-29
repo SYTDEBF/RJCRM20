@@ -14,7 +14,9 @@
     <typeAlias type="domain.Order" alias="order"/>  
     <typeAlias type="dto.OrderDto" alias="orderdto"/>  
     <typeAlias alias="datacoudto" type="dto.DataCouDto"/>  
-    <typeAlias type="domain.Shop" alias="shop"/> 
+    <typeAlias type="domain.Shop" alias="shop"/>
+    <typeAlias type="dto.ShopDto" alias="shopdto"/>
+    <typeAlias type="dto.StaffDto" alias="staffDto"/>
   </typeAliases>  
   <!-- 数据库环境 -->  
   <environments default="development"> 

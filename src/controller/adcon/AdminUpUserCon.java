@@ -43,9 +43,36 @@ public class AdminUpUserCon implements Initializable {
         credit.setText(String.valueOf(custom.getCustom_credit()));
     }
 
-    public void sendInfo(){
-        ya(name, password, phone, address, credit);
+    public void sendInfo() {
+        if (name.getText().isEmpty() || password.getText().isEmpty() || phone.getText().isEmpty() || address.getText().isEmpty() || credit.getText().isEmpty()) {
+            InfoUtils.alertUtil("所有信息不能为空!", "警示", Alert.AlertType.WARNING);
+        } else {
+            if (!(InfoUtils.isInteger(credit.getText())) || credit.getText().length() > 4) {
+                InfoUtils.alertUtil("信用值必须为数字!", "警示", Alert.AlertType.WARNING);
+            } else if (!(InfoUtils.isPhone(phone.getText()))) {
+                InfoUtils.alertUtil("电话号码格式不正确!", "提示", Alert.AlertType.INFORMATION);
+            } else {
+                try {
+                    CustomServerImp customServerImp=new CustomServerImp();
+                    Custom oldCus=(Custom) Controller.primaryStage.getUserData();
+                    Custom custom =new Custom(oldCus.getId(),name.getText().trim(),
+                            phone.getText().trim(),
+                            address.getText().trim(),
+                            Integer.valueOf(credit.getText().trim()),
+                            password.getText().trim());
+                    int n=customServerImp.updateCustom(custom);
+                    if(n==1){
+                        InfoUtils.alertUtil("更新成功!","提示",Alert.AlertType.INFORMATION);
+                    }else
+                    {
+                        InfoUtils.alertUtil("更新失败!","警示",Alert.AlertType.ERROR);
+                    }
+                } catch (IOException e) {
 
+                }
+            }
+
+        }
     }
 
     static void ya(TextField name, PasswordField password, TextField phone, TextField address, TextField credit) {

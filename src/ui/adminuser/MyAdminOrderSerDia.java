@@ -5,13 +5,11 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.Dialog;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import ui.MyDialog;
 
 import java.io.IOException;
 
-public class MyAdSerUserDia extends MyDialog {
-
+public class MyAdminOrderSerDia extends MyDialog {
     @Override
     public Dialog creMYDia(Stage stage) {
         Dialog dialog=new Dialog();
@@ -20,7 +18,7 @@ public class MyAdSerUserDia extends MyDialog {
         dialog.getDialogPane().setStyle("-fx-background-color: white;");
         BorderPane borderPane = null;
         try {
-            borderPane= FXMLLoader.load(getClass().getResource("/fxml/AdminSerUser.fxml"));
+            borderPane= FXMLLoader.load(getClass().getResource("/fxml/AdminOrderSer.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }

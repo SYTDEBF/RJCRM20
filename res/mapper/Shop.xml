@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="server.ShopServer">
-    <select id="getAllShop" resultType="shop">
+    <select id="getAllShop" resultType="shopdto">
         select a.id,shop_name,shop_date,b.typename as shop_type,shop_price from tb_shop a,tb_shoptype b
         where a.shop_type=b.id;
     </select>
     <select id="getShopByIdOrName" resultType="shop" parameterType="java.lang.String">
         select * from tb_shop where tb_shop.shop_name like '%${key}%' or id like '%${key}%'
     </select>
+    <insert id="addShop" parameterType="shop">
+        insert into tb_shop (shop_name,shop_date, shop_type, shop_price)
+        value
+        (#{shop_name},#{shop_date},#{shop_type},#{shop_price})
+    </insert>
+    <update id="upShop" parameterType="shop">
+        update tb_shop set shop_name=#{shop_name},shop_date=#{shop_date}, shop_type=#{shop_type},shop_price=#{shop_price} where id=#{id}
+    </update>
 </mapper>

@@ -1,13 +1,13 @@
-package domain;
+package dto;
 
 import java.time.LocalDate;
 import java.util.Date;
 
-public class Shop {
+public class ShopDto {
     private int id;
     private String shop_name;
     private LocalDate shop_date;
-    private int shop_type;
+    private String shop_type;
     private float shop_price;
     public void setId(int id) {
         this.id = id;
@@ -16,19 +16,21 @@ public class Shop {
         this.shop_name = shop_name;
     }
 
+    public void setShop_type(String shop_type) {
+        this.shop_type = shop_type;
+    }
 
     @Override
     public String toString() {
         return
                 "编号:" + id +
-                "商品名称:" + shop_name;
+                        "商品名称:" + shop_name;
 
 
     }
 
 
-    public Shop() {
-    }
+
 
     public void setShop_price(float shop_price) {
         this.shop_price = shop_price;
@@ -40,7 +42,7 @@ public class Shop {
         return shop_name;
     }
 
-    public Shop(int id, String shop_name, LocalDate shop_date, int shop_type, float shop_price) {
+    public ShopDto(int id, String shop_name, LocalDate shop_date, String shop_type, float shop_price) {
         this.id = id;
         this.shop_name = shop_name;
         this.shop_date = shop_date;
@@ -56,14 +58,12 @@ public class Shop {
         this.shop_date = shop_date;
     }
 
-    public int getShop_type() {
+    public ShopDto() {
+    }
+
+    public String getShop_type() {
         return shop_type;
     }
-
-    public void setShop_type(int shop_type) {
-        this.shop_type = shop_type;
-    }
-
     public double getShop_price() {
         return shop_price;
     }

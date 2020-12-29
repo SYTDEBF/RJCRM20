@@ -61,7 +61,7 @@
             </TextField>
 
 
-            <Button mnemonicParsing="false" text="修改">
+            <Button mnemonicParsing="false" text="修改" onAction="#sendInfo">
                <font>
                   <Font name="Microsoft YaHei" size="15.0" />
                </font>

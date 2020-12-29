@@ -8,16 +8,14 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-            style="-fx-background-color:white" stylesheets="@/css/adminUI.css" fx:controller="controller.adcon.AdminUpUserCon">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:white" stylesheets="@/css/adminUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adcon.AdminUpShopCon">
    <left>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" style="-fx-background-color: rgb(248,246,231);">
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgb(248,246,231);" BorderPane.alignment="CENTER">
 
          <children>
-            <Label text="" textAlignment="CENTER" fx:id="addLabel">
+            <Label fx:id="addLabel" text="" textAlignment="CENTER">
                <VBox.margin>
-                  <Insets left="10.0"  top="10.0" />
+                  <Insets left="10.0" top="10.0" />
                </VBox.margin>
             </Label>
          </children>
@@ -26,7 +24,7 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" text="搜索用户" textAlignment="CENTER">
+            <Label alignment="CENTER" contentDisplay="CENTER" text="添加用户" textAlignment="CENTER">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" top="10.0" />
                </VBox.margin>
@@ -34,34 +32,29 @@
                   <Font name="Microsoft YaHei" size="15.0" />
                </font>
             </Label>
-            <TextField promptText="姓名" fx:id="name">
+            <TextField fx:id="name" promptText="商品名称">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <PasswordField promptText="密码" fx:id="password">
+            <DatePicker fx:id="shop_date" promptText="生产日期">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" top="10.0" />
                </VBox.margin>
-            </PasswordField>
-            <TextField promptText="电话" fx:id="phone">
-               <VBox.margin>
-                  <Insets left="30.0" right="30.0" top="10.0" />
-               </VBox.margin>
-            </TextField>
-            <TextField promptText="地址" fx:id="address">
+            </DatePicker>
+            <TextField fx:id="shop_type" promptText="商品类型">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField promptText="信用值" fx:id="credit">
+            <TextField fx:id="shop_pri" promptText="商品价格">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" top="10.0" />
                </VBox.margin>
             </TextField>
 
 
-            <Button mnemonicParsing="false" text="修改" onAction="#sendInfo">
+            <Button mnemonicParsing="false" onAction="#sendInfo" text="修改">
                <font>
                   <Font name="Microsoft YaHei" size="15.0" />
                </font>

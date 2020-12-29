@@ -1,18 +1,21 @@
 package controller.adcon;
 
 import domain.Shop;
+import dto.ShopDto;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import serverimp.ShopServerImp;
+import ui.MyDialog;
+import ui.adminuser.MyAdUpUserDia;
+import ui.adminuser.MyAdminAddShopCia;
+import ui.adminuser.MyAdminUpShopDia;
+import util.InfoUtils;
 
 import java.net.URL;
 import java.util.List;
@@ -20,10 +23,10 @@ import java.util.ResourceBundle;
 
 public class AdShopCon implements Initializable {
 
-    ObservableList<Shop> users = FXCollections.observableArrayList();
+    ObservableList<ShopDto> users = FXCollections.observableArrayList();
 
     @FXML
-    TableView<Shop> test;
+    TableView<ShopDto> test;
 
     @FXML
     Button addBut;
@@ -43,7 +46,7 @@ public class AdShopCon implements Initializable {
     @FXML
     TextField serText;
 
-    Shop shop;
+    ShopDto shop;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         TableColumn firstNameCol = new TableColumn("编号");
@@ -73,7 +76,7 @@ public class AdShopCon implements Initializable {
 
 
         ShopServerImp shopServerImp=new ShopServerImp();
-        List<Shop> shops=shopServerImp.getAllShop();
+        List<ShopDto> shops=shopServerImp.getAllShop();
         users.addAll(shops);
 
 
@@ -83,17 +86,38 @@ public class AdShopCon implements Initializable {
 
         AdStaffCon.butIcon(addBut, edBut, delBut, reBut, serBut);
         test.getSelectionModel().selectedItemProperty().addListener(
-                new ChangeListener<Shop>() {
+                new ChangeListener<ShopDto>() {
                     @Override
                     public void changed(
-                            ObservableValue<? extends Shop> observableValue,
-                            Shop oldShop, Shop newItem) {
+                            ObservableValue<? extends ShopDto> observableValue,
+                            ShopDto oldShop, ShopDto newItem) {
                         shop=newItem;
                     }
                 });
 
     }
-    public void addShopUi(){}
-    public void upShopUi(){}
+    public void addShopUi(){
+        MyDialog addUserDia=new MyAdminAddShopCia();
+        Dialog dialog=addUserDia.creMYDia(Controller.primaryStage);
+        dialog.showAndWait();
+    }
+    public void upShopUi(){
+        if (shop==null)
+        {
+            InfoUtils.alertUtil("请选择一行数据","提示", Alert.AlertType.INFORMATION);
+        }else{
+            ShopServerImp shopServerImp=new ShopServerImp();
+            Shop oldShop=shopServerImp.getShopById(shop.getId());
+            System.out.println("4399"+oldShop);
+            if (shop!=null)
+            {
+                Controller.primaryStage.setUserData(oldShop);
+                MyDialog addUserDia = new MyAdminUpShopDia();
+                Dialog dialog = addUserDia.creMYDia(Controller.primaryStage);
+                dialog.showAndWait();
+            }
+
+        }
+    }
     public void serShopUi(){}
 }

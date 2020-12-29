@@ -7,9 +7,6 @@
     <delete id="deleteCustom" parameterType="java.lang.Integer">
     delete from tb_custom where id= #{id}
     </delete>
-    <update id="updateCustom" parameterType="custom">
-    update tb_custom set custom_name = #{custom_name}, custom_phone = #{custom_phone},custom_address = #{custom_address},custom_credit = #{custom_credit} where id= #{id}
-   </update>
     <select id="getCustom" parameterType="java.lang.Integer" resultType="custom">
     select id, custom_name, custom_phone from tb_custom where id = #{id}
     </select>
@@ -22,4 +19,12 @@
     <select id="findCustomsByIdOrName" resultType="custom" parameterType="java.lang.String">
         select id,custom_name from tb_custom  where tb_custom.custom_name like '%${keyword}%' or id like '%${keyword}%'
     </select>
+    <update id="updateCustom" parameterType="custom">
+        update tb_custom set custom_name=#{custom_name},
+                             custom_phone=#{custom_phone},
+                             custom_address=#{custom_address},
+                             custom_credit=#{custom_credit},
+                             custom_password=#{custom_password}
+                             where id=#{id}
+    </update>
 </mapper>

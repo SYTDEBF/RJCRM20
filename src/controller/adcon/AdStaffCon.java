@@ -3,21 +3,27 @@ package controller.adcon;
 import de.jensd.fx.glyphs.GlyphsDude;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import domain.Custom;
+import domain.Order;
+import domain.Shop;
 import domain.Staff;
+import dto.OrderDto;
+import dto.StaffDto;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import server.StaffServer;
 import serverimp.CustomServerImp;
+import serverimp.OrderServerImp;
+import serverimp.ShopServerImp;
 import serverimp.StaffServerImp;
+import ui.MyDialog;
+import ui.adminuser.*;
+import util.InfoUtils;
 
 import java.io.IOException;
 import java.net.URL;
@@ -25,10 +31,10 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class AdStaffCon implements Initializable {
-    ObservableList<Staff> users = FXCollections.observableArrayList();
+    ObservableList<StaffDto> users = FXCollections.observableArrayList();
 
     @FXML
-    TableView<Staff> test;
+    TableView<StaffDto> test;
 
     @FXML
     Button addBut;
@@ -48,7 +54,7 @@ public class AdStaffCon implements Initializable {
     @FXML
     TextField serText;
 
-    Staff staff;
+    StaffDto staffDto;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -63,32 +69,36 @@ public class AdStaffCon implements Initializable {
                 new PropertyValueFactory<>("staff_name"));
 
         TableColumn emailCol = new TableColumn("部门");
-        emailCol.setMinWidth(200);
+        emailCol.setMinWidth(100);
         emailCol.setCellValueFactory(
                 new PropertyValueFactory<>("staff_depart"));
 
-        TableColumn adressCol = new TableColumn("负责食品");
-        adressCol.setMinWidth(200);
+        TableColumn passwordCol=new TableColumn("密码");
+        passwordCol.setMinWidth(100);
+        passwordCol.setCellValueFactory(new PropertyValueFactory<>("staff_password"));
+
+        TableColumn adressCol = new TableColumn("负责商品");
+        adressCol.setMinWidth(100);
         adressCol.setCellValueFactory(
-                new PropertyValueFactory<>("staff_shop_type"));
+                new PropertyValueFactory<>("typename"));
 
         TableColumn creditCol = new TableColumn("薪水");
-        creditCol.setMinWidth(200);
+        creditCol.setMinWidth(100);
         creditCol.setCellValueFactory(
                 new PropertyValueFactory<>("staff_salary"));
 
 
         StaffServerImp staffServerImp=new StaffServerImp();
-        List<Staff> staffList=staffServerImp.getAllStaff();
+        List<StaffDto> staffList=staffServerImp.getAllStaff();
         users.addAll(staffList);
 
         test.setItems(users);
         test.setEditable(true);
-        test.getColumns().addAll(firstNameCol, lastNameCol, emailCol,adressCol,creditCol);
+        test.getColumns().addAll(firstNameCol, lastNameCol, passwordCol,emailCol,adressCol,creditCol);
 
         butIcon(addBut, edBut, delBut, reBut, serBut);
         test.getSelectionModel().selectedItemProperty().addListener(
-                (observableValue, oldItem, newItem) -> staff=newItem);
+                (observableValue, oldItem, newItem) -> staffDto=newItem);
     }
 
     static void butIcon(Button addBut, Button edBut, Button delBut, Button reBut, Button serBut) {
@@ -98,15 +108,56 @@ public class AdStaffCon implements Initializable {
         GlyphsDude.setIcon(reBut,FontAwesomeIcon.REFRESH,"17px");
         GlyphsDude.setIcon(serBut,FontAwesomeIcon.SEARCH,"17px");
     }
-    public void addCusUi(){
-
+    public void addStaffUi(){
+        MyDialog addStaffDia=new MyAddStaffDia();
+        Dialog dialog=addStaffDia.creMYDia(Controller.primaryStage);
+        dialog.showAndWait();
     }
-    public void serCusUi()
+    public void serStaUi()
     {
-
+        if(serText.getText().trim()==null)
+        {
+            InfoUtils.alertUtil("请输入搜索内容","警告", Alert.AlertType.WARNING);
+        }else {
+            StaffServerImp staffServerImp=new StaffServerImp();
+            List<StaffDto> staffDtos = staffServerImp.getStaffByIdOrName(serText.getText().trim());
+            if (staffDtos.isEmpty())
+            {
+                InfoUtils.alertUtil("无搜索结果","信息", Alert.AlertType.INFORMATION);
+            }else
+            {
+                MyDialog serOrderDia=new MyAdSatSerCon();
+                ObservableList<StaffDto> observableList = FXCollections.observableArrayList();
+                observableList.addAll(staffDtos);
+                Controller.primaryStage.setUserData(observableList);
+                Dialog dialog=serOrderDia.creMYDia(Controller.primaryStage);
+                dialog.showAndWait();
+            }
+        }
     }
-    public void upCusUi()
+    public void upStaUi()
     {
-
+        if (staffDto==null)
+        {
+            InfoUtils.alertUtil("请选择一行数据","提示", Alert.AlertType.INFORMATION);
+        }else{
+            StaffServerImp staffServerImp=new StaffServerImp();
+            List<Staff>staffs=staffServerImp.getStaffById(staffDto.getId());
+            if(staffs.get(0)!=null)
+            {
+                Controller.primaryStage.setUserData(staffs.get(0));
+                MyDialog upStaDia = new MyAdUpStaCia();
+                Dialog dialog = upStaDia.creMYDia(Controller.primaryStage);
+                dialog.showAndWait();
+            }
+        }
+    }
+    public void refreshStaff()
+    {
+        StaffServerImp staffServerImp=new StaffServerImp();
+        List<StaffDto> staffDtos = staffServerImp.getAllStaff();
+        users.clear();
+        users.addAll(staffDtos);
+        test.refresh();
     }
 }

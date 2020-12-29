@@ -42,7 +42,12 @@ public class CustomServerImp implements CustomServer {
 
     @Override
     public int updateCustom(Custom Custom) {
-        return 0;
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        CustomServer customServerMapper = sqlSession.getMapper(CustomServer.class);
+        int n=customServerMapper.updateCustom(Custom);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
     }
 
     @Override

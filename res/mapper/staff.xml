@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="server.StaffServer">
-    <select id="getAllStaff"  resultType="staff">
-        select a.id,staff_name,staff_depart,b.typename,staff_salary from tb_staff a,tb_shoptype b
+    <select id="getAllStaff"  resultType="staffDto">
+        select a.id,staff_name,staff_depart,b.typename,staff_password,staff_salary from tb_staff a,tb_shoptype b
         where a.staff_shop_type=b.id;
     </select>
-    <select id="getStaffByIdOrName" resultType="staff" parameterType="java.lang.String">
-        select * from tb_staff  where tb_staff.staff_name like '%${key}%' or id like '%${key}%'
+    <select id="getStaffByIdOrName" resultType="staffDto" parameterType="java.lang.String">
+        select a.id,staff_name,staff_depart,b.typename,staff_password,staff_salary from tb_staff a, tb_shoptype b
+        where a.staff_name like '%${key}%' or a.id like '%${key}%' and a.staff_shop_type=b.id;
     </select>
+    <insert id="addStaff" parameterType="staff">
+        insert into tb_staff(staff_name, staff_depart, staff_shop_type, staff_salary, staff_password) VALUE
+        (#{staff_name}, #{staff_depart}, #{staff_shop_type}, #{staff_salary}, #{staff_password})
+    </insert>
+    <delete id="deleteStaff" parameterType="java.lang.Integer">
+        delete FROM tb_staff where id=#{id}
+    </delete>
+    <update id="upStaff" parameterType="staff">
+         update tb_staff set staff_name=#{staff_name},staff_depart=#{staff_depart},
+         staff_shop_type=#{staff_shop_type},staff_salary=#{staff_salary}
+         ,staff_password=#{staff_password} where id=#{id}
+
+    </update>
 </mapper>
 
 

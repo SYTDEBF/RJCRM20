@@ -3,29 +3,29 @@ package ui.adminuser;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Dialog;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import ui.MyDialog;
 
 import java.io.IOException;
 
-public class MyAdSerUserDia extends MyDialog {
-
+public class MyAdminAddShopCia extends MyDialog {
     @Override
     public Dialog creMYDia(Stage stage) {
         Dialog dialog=new Dialog();
-        dialog.setTitle("搜索结果");
+        dialog.setTitle("添加商品");
+
         dialog.getDialogPane().getButtonTypes().addAll(ButtonType.CANCEL);
         dialog.getDialogPane().setStyle("-fx-background-color: white;");
-        BorderPane borderPane = null;
+        Pane borderPane = null;
         try {
-            borderPane= FXMLLoader.load(getClass().getResource("/fxml/AdminSerUser.fxml"));
+            borderPane= FXMLLoader.load(getClass().getResource("/fxml/AdminAddShop.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         dialog.getDialogPane().setContent(borderPane);
         dialog.initOwner(stage);
+
         return dialog;
     }
 }

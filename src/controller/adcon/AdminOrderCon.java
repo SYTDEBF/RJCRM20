@@ -1,5 +1,8 @@
 package controller.adcon;
 
+import domain.Admin;
+import domain.Custom;
+import domain.Order;
 import dto.OrderDto;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -9,12 +12,20 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import serverimp.CustomServerImp;
 import serverimp.OrderServerImp;
 import ui.MyDialog;
+import ui.adminuser.MyAdOrderUpDia;
+import ui.adminuser.MyAdSerUserDia;
+import ui.adminuser.MyAdUpUserDia;
+import ui.adminuser.MyAdminOrderSerDia;
 import ui.adorder.MyAdOrderDia;
+import util.InfoUtils;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AdminOrderCon implements Initializable {
@@ -41,7 +52,7 @@ public class AdminOrderCon implements Initializable {
     @FXML
     TextField serText;
 
-    OrderDto customSer;
+    OrderDto orderDto;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -96,7 +107,7 @@ public class AdminOrderCon implements Initializable {
                     public void changed(
                             ObservableValue<? extends OrderDto> observableValue,
                             OrderDto oldItem, OrderDto newItem) {
-                        customSer = newItem;
+                        orderDto = newItem;
                     }
                 });
     }
@@ -105,13 +116,84 @@ public class AdminOrderCon implements Initializable {
         MyDialog myDialog=new MyAdOrderDia();
         Dialog dialog=myDialog.creMYDia(Controller.primaryStage);
         dialog.showAndWait();
-    }
-    public void upCusUi ()
-    {
 
     }
-    public void serCusUi ()
+    public void editOrderUI ()
     {
+        if (orderDto==null)
+        {
+            InfoUtils.alertUtil("请选择一行数据","提示", Alert.AlertType.INFORMATION);
+        }else{
+            OrderServerImp orderServerImp=new OrderServerImp();
+            List<Order> orders=orderServerImp.getOrderById(orderDto.getId());
+            if(orders.get(0)!=null)
+            {
+                Controller.primaryStage.setUserData(orders.get(0));
+                MyDialog addUserDia = new MyAdOrderUpDia();
+                Dialog dialog = addUserDia.creMYDia(Controller.primaryStage);
+                dialog.showAndWait();
+            }
 
+        }
     }
+    public void delOrder()
+    {
+        if (orderDto==null)
+        {
+            InfoUtils.alertUtil("请选择一行数据","", Alert.AlertType.WARNING);
+        }else
+        {
+
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setContentText("你确定要删除吗");
+
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK){
+                // ... user chose OK
+                OrderServerImp orderServerImp=new OrderServerImp();
+                int n=orderServerImp.deleteOrder(orderDto.getId());
+                if (n==1)
+                {
+                    InfoUtils.alertUtil("删除成功","", Alert.AlertType.INFORMATION);
+                    refreshOrder();
+                }else
+                {
+                    InfoUtils.alertUtil("删除失败","", Alert.AlertType.WARNING);
+                }
+
+            }
+
+        }
+    }
+    public void orderSerUi ()
+    {
+        if(serText.getText().trim()==null)
+        {
+            InfoUtils.alertUtil("请输入搜索内容","警告", Alert.AlertType.WARNING);
+        }else {
+            OrderServerImp orderServerImp=new OrderServerImp();
+            List<Order> orders = orderServerImp.getOrderById(Integer.valueOf(serText.getText().trim()));
+            if (orders.isEmpty())
+            {
+                InfoUtils.alertUtil("无搜索结果","信息", Alert.AlertType.INFORMATION);
+            }else
+            {
+                MyDialog serOrderDia=new MyAdminOrderSerDia();
+                ObservableList<Order> observableList = FXCollections.observableArrayList();
+                observableList.addAll(orders);
+                Controller.primaryStage.setUserData(observableList);
+                Dialog dialog=serOrderDia.creMYDia(Controller.primaryStage);
+                dialog.showAndWait();
+            }
+        }
+    }
+    public void refreshOrder()
+    {
+        OrderServerImp orderServerImp=new OrderServerImp();
+        List<OrderDto> customList = orderServerImp.getAllOrder();
+        users.clear();
+        users.addAll(customList);
+        test.refresh();
+    }
+
 }

@@ -1,15 +1,23 @@
-package domain;
+package dto;
 
-public class Staff {
+public class StaffDto {
     private int id;
     private String staff_name;
     private String staff_depart;
-    private int staff_shop_type;
+    private String  typename;
     private int staff_salary;
     private String staff_password;
 
     public String getStaff_password() {
         return staff_password;
+    }
+
+    public String getTypename() {
+        return typename;
+    }
+
+    public void setTypename(String typename) {
+        this.typename = typename;
     }
 
     public void setStaff_password(String staff_password) {
@@ -26,21 +34,13 @@ public class Staff {
         this.staff_depart = staff_depart;
     }
 
-    public Staff(int id, String staff_name, String staff_depart, int staff_shop_type, int staff_salary, String staff_password) {
+    public StaffDto(int id, String staff_name, String staff_depart, String typename, int staff_salary, String staff_password) {
         this.id = id;
         this.staff_name = staff_name;
         this.staff_depart = staff_depart;
-        this.staff_shop_type = staff_shop_type;
+        this.typename = typename;
         this.staff_salary = staff_salary;
         this.staff_password = staff_password;
-    }
-
-    public int getStaff_shop_type() {
-        return staff_shop_type;
-    }
-
-    public void setStaff_shop_type(int staff_shop_type) {
-        this.staff_shop_type = staff_shop_type;
     }
 
     public void setStaff_salary(int staff_salary) {
@@ -62,14 +62,14 @@ public class Staff {
 
 
 
-    public Staff() {
+    public StaffDto() {
     }
 
     @Override
     public String toString() {
         return
                 "编号:" + id +
-                " 员工姓名:" + staff_name;
+                        " 员工姓名:" + staff_name;
 
     }
 }
