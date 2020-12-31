@@ -39,5 +39,19 @@ public interface OrderServer {
      */
     List<OrderDto> getOrderDtoById(Integer id);
 
+    //TODO
+    /**
+     * 客户搜索订单
+     * @param id
+     * @return
+     */
     List<OrderDto> getOrderDtoByIdOrNameCus(Integer id);
+
+    /**
+     * 员工业绩订单查看
+     * @return
+     */
+    List<OrderDto> getOrderByStaffId(Integer id);
+
+
 }

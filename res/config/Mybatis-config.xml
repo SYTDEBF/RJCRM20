@@ -14,9 +14,9 @@
     <typeAlias type="domain.Order" alias="order"/>  
     <typeAlias type="dto.OrderDto" alias="orderdto"/>  
     <typeAlias alias="datacoudto" type="dto.DataCouDto"/>  
-    <typeAlias type="domain.Shop" alias="shop"/>
-    <typeAlias type="dto.ShopDto" alias="shopdto"/>
-    <typeAlias type="dto.StaffDto" alias="staffDto"/>
+    <typeAlias type="domain.Shop" alias="shop"/>  
+    <typeAlias type="dto.ShopDto" alias="shopdto"/>  
+    <typeAlias type="dto.StaffDto" alias="staffDto"/> 
   </typeAliases>  
   <!-- 数据库环境 -->  
   <environments default="development"> 
@@ -26,8 +26,8 @@
         <property name="driver" value="com.mysql.cj.jdbc.Driver"/>  
         <property name="url" value="jdbc:mysql://localhost:3306/db_crm?characterEncoding=utf8&amp;allowMultiQueries=true&amp;serverTimezone=CST"/>  
         <property name="username" value="root"/>  
-        <property name="password" value="123456"/> 
-      </dataSource>
+        <property name="password" value="123456"/>
+      </dataSource> 
     </environment> 
   </environments>  
   <mappers> 

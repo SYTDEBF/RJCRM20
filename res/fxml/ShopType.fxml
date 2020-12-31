@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 
 <SplitPane  orientation="VERTICAL"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="controller.adcon.ShopTypeCon"  >
+           fx:controller="controller.adcon.AdminShopTypeCon"  >
   <items>
     <AnchorPane>
          <children>

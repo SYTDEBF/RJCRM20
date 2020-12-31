@@ -100,4 +100,20 @@ public class OrderServerImp implements OrderServer {
         sqlSession.close();
         return orderDtos;
     }
+
+    /**
+     * 员工业绩订单查看
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public List<OrderDto> getOrderByStaffId(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        OrderServer orderServerMapper = sqlSession.getMapper(OrderServer.class);
+        List<OrderDto>orderDtos =orderServerMapper.getOrderByStaffId(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return orderDtos;
+    }
 }

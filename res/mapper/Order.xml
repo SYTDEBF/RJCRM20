@@ -19,7 +19,7 @@
             c.staff_id = b.id
           AND c.shop_id= a.id
           AND c.custom_id = d.id
-          and   b.staff_shop_type=e.id
+          and   a.shop_type=e.id
     </select>
     <insert id="addOrder" parameterType="order" useGeneratedKeys="true" keyProperty="id">
         insert into tb_order(custom_id, shop_id, staff_id, create_time) VALUE
@@ -50,7 +50,7 @@
             c.staff_id = b.id
           AND c.shop_id= a.id
           AND c.custom_id = d.id
-          and   b.staff_shop_type=e.id
+          and   a.shop_type=e.id
           and d.id=#{id}
     </select>
     <select id="getOrderDtoByIdOrNameCus" parameterType="java.lang.Integer" resultType="orderdto">
@@ -72,7 +72,29 @@
             c.staff_id = b.id
           AND c.shop_id= a.id
           AND c.custom_id = d.id
-          and   b.staff_shop_type=e.id
+          and   a.shop_type=e.id
           and d.id=#{id}
+    </select>
+    <select id="getOrderByStaffId" parameterType="java.lang.Integer" resultType="orderdto">
+        SELECT
+            c.id,
+            d.custom_name,
+            a.shop_name,
+            a.shop_price,
+            b.staff_name,
+            e.typename,
+            b.staff_depart
+        FROM
+            tb_shop a,
+            tb_staff b,
+            tb_order c,
+            tb_custom d,
+            tb_shoptype e
+        WHERE
+            c.staff_id = b.id
+          AND c.shop_id= a.id
+          AND c.custom_id = d.id
+          and   a.shop_type=e.id
+          and b.id=#{id}
     </select>
 </mapper>

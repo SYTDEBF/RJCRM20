@@ -7,9 +7,7 @@
     <delete id="deleteCustom" parameterType="java.lang.Integer">
     delete from tb_custom where id= #{id}
     </delete>
-    <select id="getCustom" parameterType="java.lang.Integer" resultType="custom">
-    select id, custom_name, custom_phone from tb_custom where id = #{id}
-    </select>
+
     <select id="findCustoms" parameterType="string" resultType="custom">
     select id, custom_name, custom_phone from tb_custom   where custom_name like concat('%', #{custome_name}, '%')
     </select>

@@ -1,7 +1,6 @@
-package controller.cuscon;
+package controller.stacon;
 
 
-import controller.adcon.Controller;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -23,10 +22,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class CustomMainCon implements Initializable {
-    @FXML
-    Pane leftPane;
-
+public class StaffMainCon implements Initializable {
     @FXML
     TabPane wordText1;
 
@@ -52,34 +48,34 @@ public class CustomMainCon implements Initializable {
         Tab infoTab=new Tab("个人信息");
         BorderPane borderPane=null;
         try {
-            borderPane=FXMLLoader.load(getClass().getResource("/fxml/CustomInfo.fxml"));
+            borderPane=FXMLLoader.load(getClass().getResource("/fxml/StaffInfo.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         infoTab.setContent(borderPane);
 
 
-        Tab welTab=new Tab("商品");
-        StackPane stackPane= null;
-        try {
-            stackPane = FXMLLoader.load(getClass().getResource("/fxml/CustomShop.fxml"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Tab welTab=new Tab("业绩信息");
+//        StackPane stackPane= null;
+//        try {
+//            stackPane = FXMLLoader.load(getClass().getResource("/fxml/CustomShop.fxml"));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
-        welTab.setContent(stackPane);
+
         Tab orderTab=new Tab("订单信息");
         VBox orderVBox= null;
         try {
-            orderVBox = FXMLLoader.load(getClass().getResource("/fxml/CustomOrder.fxml"));
+            orderVBox = FXMLLoader.load(getClass().getResource("/fxml/StaffOrder.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         orderTab.setContent(orderVBox);
+        Tab planTab=new Tab("工作计划");
 
 
-
-        wordText1.getTabs().addAll(tabZero,welTab,orderTab,infoTab);
+        wordText1.getTabs().addAll(tabZero,welTab,orderTab,infoTab,planTab);
         wordText1.getSelectionModel().select(1);
     }
 

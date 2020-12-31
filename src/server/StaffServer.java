@@ -42,4 +42,7 @@ public interface StaffServer  {
     int upStaff(Staff staff);
     @Select("select *from tb_staff where id=#{id}")
     List<Staff> getStaffById(Integer id);
+
+    @Select("select id from tb_staff where id=#{arg0} and staff_password=#{arg1}")
+    Staff getStaffByIdAndPassword(Integer id,String password);
 }

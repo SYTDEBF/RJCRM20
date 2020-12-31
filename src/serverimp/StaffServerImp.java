@@ -94,4 +94,14 @@ public class StaffServerImp implements  StaffServer{
         sqlSession.close();
         return staffList;
     }
+
+    @Override
+    public Staff getStaffByIdAndPassword(Integer id, String password) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        StaffServer shopTypeServerMapper = sqlSession.getMapper(StaffServer.class);
+        Staff staff=shopTypeServerMapper.getStaffByIdAndPassword(id,password);
+        sqlSession.commit();
+        sqlSession.close();
+        return staff;
+    }
 }

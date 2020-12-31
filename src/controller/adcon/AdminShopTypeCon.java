@@ -35,7 +35,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class ShopTypeCon implements Initializable {
+public class AdminShopTypeCon implements Initializable {
     ObservableList<ShopType> users = FXCollections.observableArrayList();
 
     @FXML

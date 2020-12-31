@@ -98,7 +98,7 @@ public class CustomOrderCon implements Initializable {
 
         test.setItems(users);
         test.setEditable(true);
-        test.getColumns().addAll(idCol, custom_nameCol, shop_nameCol, typenameCol, shop_priceCol, staff_departCol);
+        test.getColumns().addAll(idCol, custom_nameCol, shop_nameCol, typenameCol,staff_nameCol, shop_priceCol, staff_departCol);
 
         AdStaffCon.butIcon(addBut, edBut, delBut, reBut, serBut);
         test.getSelectionModel().selectedItemProperty().addListener(

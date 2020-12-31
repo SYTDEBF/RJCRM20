@@ -69,7 +69,7 @@ public class StaffDto {
     public String toString() {
         return
                 "编号:" + id +
-                        " 员工姓名:" + staff_name;
+                        " 员工姓名:" + staff_name+" 负责商品"+typename;
 
     }
 }

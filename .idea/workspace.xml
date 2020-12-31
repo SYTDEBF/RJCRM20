@@ -53,26 +53,27 @@
       <change afterPath="$PROJECT_DIR$/test/SAsa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/fxml/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/config/Mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/config/Mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/mapper/Custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/mapper/Custom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RJCRM/server/CustomServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/server/CustomServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RJCRM/serverimp/CustomServerImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/serverimp/CustomServerImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/fxml/AdminShop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminShop.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/config/Mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/config/Mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/fxml/ShopType.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/ShopType.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/html/css/adminwel.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/html/css/adminwel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/mapper/Custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/Custom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/mapper/Order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/Order.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/mapper/ShopType.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/ShopType.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/adcon/AdShopCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdShopCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/adcon/AdStaffCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdStaffCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/adcon/AdminSerShopCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminSerShopCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/adcon/AdminOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminOrderCon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/adcon/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/adcon/ShopTypeCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/ShopTypeCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/adcon/ShopTypeCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminShopTypeCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/cuscon/CustomMainCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomMainCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/cuscon/CustomOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomOrderCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/StaffDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/StaffDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/CustomServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/CustomServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/OrderServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/OrderServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/ShopTypeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ShopTypeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/StaffServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/StaffServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/serverimp/CustomServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/CustomServerImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serverimp/ShopTypeServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/ShopTypeServerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +144,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/controller/adcon/AdminOrderCon.java" root0="SKIP_INSPECTION" />
@@ -217,11 +226,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller.stacon" />
       <recent name="ui.adminuser" />
       <recent name="controller.cuscon" />
       <recent name="controller.adcon" />
       <recent name="controller" />
-      <recent name="ui.shoptype" />
     </key>
   </component>
   <component name="RunManager" selected="应用程序.Main">
@@ -497,7 +506,7 @@
       <workItem from="1609306922701" duration="14202000" />
       <workItem from="1609337630219" duration="2896000" />
       <workItem from="1609372229813" duration="608000" />
-      <workItem from="1609373065827" duration="305000" />
+      <workItem from="1609373065827" duration="11871000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1605579615573</created>
@@ -562,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609253797731</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="用户模块">
+      <created>1609373427944</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609373427944</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +608,8 @@
     <MESSAGE value="更新数据库脚本文件" />
     <MESSAGE value="常规" />
     <MESSAGE value="用户，商品，员工，订单增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户，商品，员工，订单增删改查" />
+    <MESSAGE value="用户模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

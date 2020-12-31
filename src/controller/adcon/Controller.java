@@ -2,6 +2,7 @@ package controller.adcon;
 
 import domain.Admin;
 import domain.Custom;
+import domain.Staff;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,6 +16,7 @@ import org.kordamp.bootstrapfx.scene.layout.Panel;
 import serverimp.AdminServerImp;
 import serverimp.CustomServerImp;
 import controller.cuscon.CrmCookies;
+import serverimp.StaffServerImp;
 import util.InfoUtils;
 
 import java.io.IOException;
@@ -35,6 +37,7 @@ public class Controller  {
 
     public static Stage primaryStage = new Stage();
     public static Parent cusRoot=new Panel();
+    public static Parent staRoot=new Panel();
     public void initialize() {
         Font font=Font.font("MicrosoftYaHei", FontWeight.BOLD, FontPosture.REGULAR,24);
         cLabel.setFont(font);
@@ -102,6 +105,34 @@ public class Controller  {
                 try {
                     cusRoot.setUserData(custom.getId());
                     root = FXMLLoader.load(getClass().getResource("/fxml/CustomUI.fxml"));
+                    root.setStyle("-fx-font-family:'微软雅黑';");
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                primaryStage.setTitle("CRM");
+
+                Scene scene = new Scene(root);
+                scene.getStylesheets().addAll(
+                        "org/kordamp/bootstrapfx/bootstrapfx.css");
+
+                primaryStage.setScene(scene);
+                primaryStage.show();
+            }else
+            {
+                InfoUtils.alertUtil("用户名和密码错误","提示", Alert.AlertType.WARNING);
+            }
+        }
+        if(sf.getText().equals("员工"))
+        {
+            StaffServerImp serverImp = new StaffServerImp();
+
+            Staff staff=serverImp.getStaffByIdAndPassword(Integer.valueOf(name.getText().trim()),password.getText().trim());
+            Parent root = null;
+            if (staff!=null) {
+                try {
+                    staRoot.setUserData(staff.getId());
+                    root = FXMLLoader.load(getClass().getResource("/fxml/StaffUI.fxml"));
                     root.setStyle("-fx-font-family:'微软雅黑';");
 
                 } catch (IOException e) {
