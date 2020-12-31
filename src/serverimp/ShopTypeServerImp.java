@@ -30,4 +30,35 @@ public class ShopTypeServerImp implements ShopTypeServer {
         sqlSession.close();
         return n;
     }
+
+    @Override
+    public int deleteShopType(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        ShopTypeServer shopTypeServerMapper = sqlSession.getMapper(ShopTypeServer.class);
+        int n=shopTypeServerMapper.deleteShopType(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+
+    @Override
+    public int upShopTypeOnlyTypeName(ShopType shopType) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        ShopTypeServer shopTypeServerMapper = sqlSession.getMapper(ShopTypeServer.class);
+        int n=shopTypeServerMapper.upShopTypeOnlyTypeName(shopType);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+    @Override
+    public List<ShopType> getShopTypeByIdOrName(String key) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        ShopTypeServer shopTypeServerMapper = sqlSession.getMapper(ShopTypeServer.class);
+        List<ShopType> shopTypeList=shopTypeServerMapper.getShopTypeByIdOrName(key);
+        sqlSession.commit();
+        sqlSession.close();
+        return shopTypeList;
+    }
 }

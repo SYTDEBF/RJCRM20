@@ -32,7 +32,7 @@
                                 <Insets right="10.0" />
                             </HBox.margin>
                         </Button>
-                        <Button fx:id="reBut" minWidth="80">
+                        <Button fx:id="reBut" minWidth="80" onAction="#refreshCus">
                             <HBox.margin>
                                 <Insets right="10.0" />
                             </HBox.margin>

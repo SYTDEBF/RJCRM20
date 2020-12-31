@@ -101,7 +101,7 @@ public class AdStaffCon implements Initializable {
                 (observableValue, oldItem, newItem) -> staffDto=newItem);
     }
 
-    static void butIcon(Button addBut, Button edBut, Button delBut, Button reBut, Button serBut) {
+    public static void butIcon(Button addBut, Button edBut, Button delBut, Button reBut, Button serBut) {
         GlyphsDude.setIcon(addBut, FontAwesomeIcon.PLUS,"17px");
         GlyphsDude.setIcon(edBut, FontAwesomeIcon.EDIT,"17px");
         GlyphsDude.setIcon(delBut, FontAwesomeIcon.TRASH,"17px");

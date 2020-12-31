@@ -6,4 +6,10 @@
     <insert id="addShopType" parameterType="shoptype" useGeneratedKeys="true" keyProperty="id">
         insert into tb_shoptype(parentid,typename,stype) value (#{parentid},#{typename},#{stype});
     </insert>
+    <delete id="deleteShopType" parameterType="java.lang.Integer">
+        delete from tb_shoptype where id=#{id}
+    </delete>
+    <update id="upShopTypeOnlyTypeName" parameterType="shoptype">
+        update tb_shoptype set typename=#{typename} where id=#{id}
+    </update>
 </mapper>

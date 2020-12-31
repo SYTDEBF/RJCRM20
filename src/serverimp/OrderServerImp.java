@@ -80,4 +80,24 @@ public class OrderServerImp implements OrderServer {
         sqlSession.close();
         return orderDtos;
     }
+
+    @Override
+    public List<OrderDto> getOrderDtoById(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        OrderServer orderServerMapper = sqlSession.getMapper(OrderServer.class);
+        List<OrderDto>orderDtos =orderServerMapper.getOrderDtoById(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return orderDtos;
+    }
+
+    @Override
+    public List<OrderDto> getOrderDtoByIdOrNameCus(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        OrderServer orderServerMapper = sqlSession.getMapper(OrderServer.class);
+        List<OrderDto>orderDtos =orderServerMapper.getOrderDtoByIdOrNameCus(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return orderDtos;
+    }
 }

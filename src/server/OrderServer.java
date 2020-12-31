@@ -31,4 +31,13 @@ public interface OrderServer {
      */
     @Select("select * from tb_order where id=#{id}")
     List<Order> getOrderById(Integer id);
+
+    /**
+     * 客户订单获取
+     * @param id
+     * @return
+     */
+    List<OrderDto> getOrderDtoById(Integer id);
+
+    List<OrderDto> getOrderDtoByIdOrNameCus(Integer id);
 }

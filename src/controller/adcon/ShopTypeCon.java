@@ -2,7 +2,11 @@ package controller.adcon;
 
 import com.alibaba.fastjson.JSONObject;
 import domain.Custom;
+import domain.Shop;
 import domain.ShopType;
+import dto.ShopDto;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -14,9 +18,12 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import serverimp.CustomServerImp;
+import serverimp.ShopServerImp;
 import serverimp.ShopTypeServerImp;
 import ui.adminuser.MyAdSerUserDia;
 import ui.MyDialog;
+import ui.adminuser.MyAdminSerShopTypeDia;
+import ui.adminuser.MyAdminUpShopTypeDia;
 import ui.shoptype.MyShopTypeAddDia;
 import util.InfoUtils;
 import util.TreeObjectUtils;
@@ -54,7 +61,7 @@ public class ShopTypeCon implements Initializable {
     @FXML
     WebView we;
 
-    Custom customSer;
+    ShopType shopType;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -106,18 +113,18 @@ public class ShopTypeCon implements Initializable {
         webEngine.load(url.toString());
 
         AdStaffCon.butIcon(addBut, edBut, delBut, reBut, serBut);
-//        test.getSelectionModel().selectedItemProperty().addListener(
-//                new ChangeListener<Custom>() {
-//                    @Override
-//                    public void changed(
-//                            ObservableValue<? extends Custom> observableValue,
-//                            Custom oldItem, Custom newItem) {
-//                        customSer=newItem;
-//                    }
-//                });
-//
-//    }
+        test.getSelectionModel().selectedItemProperty().addListener(
+                new ChangeListener<ShopType>() {
+                    @Override
+                    public void changed(
+                            ObservableValue<? extends ShopType> observableValue,
+                            ShopType oldItem, ShopType newItem) {
+                        shopType=newItem;
+                    }
+                });
+
     }
+
 
     public void addCusUi() {
         MyDialog addUserDia = new MyShopTypeAddDia();
@@ -125,44 +132,74 @@ public class ShopTypeCon implements Initializable {
         Controller.primaryStage.setUserData(we);
         dialog.showAndWait();
     }
+    public void delShopType()
+    {
+        if(shopType==null)
+        {
+            InfoUtils.alertUtil("请选择一行数据", "提示", Alert.AlertType.INFORMATION);
+        }else
+        {
+            //非叶子结点不能删除
+            if (shopType.getChildren().size()==0&&Integer.valueOf(shopType.getStype())==3)
+            {
 
+                ShopTypeServerImp shopTypeServerImp=new ShopTypeServerImp();
+                int n=shopTypeServerImp.deleteShopType(shopType.getId());
+                if (n==1)
+                {
+                    InfoUtils.alertUtil("删除成功", "提示", Alert.AlertType.INFORMATION);
+                    refreshCus();
+                }else
+                {
+                    InfoUtils.alertUtil("删除失败","", Alert.AlertType.WARNING);
+                }
+            }else
+            {
+                InfoUtils.alertUtil("只能删除第三层级的商品类型", "提示", Alert.AlertType.INFORMATION);
+            }
+        }
+    }
     public void serCusUi() {
 
-        try {
-            if (serText.getText().trim() == null) {
-                InfoUtils.alertUtil("请输入搜索内容", "警告", Alert.AlertType.WARNING);
+        if (serText.getText().trim() == null) {
+            InfoUtils.alertUtil("请输入搜索内容", "警告", Alert.AlertType.WARNING);
+        } else {
+            ShopTypeServerImp shopTypeServerImp=new ShopTypeServerImp();
+            List<ShopType> shopTypes = shopTypeServerImp.getShopTypeByIdOrName(serText.getText().trim());
+            if (shopTypes.isEmpty()) {
+                InfoUtils.alertUtil("无搜索结果", "信息", Alert.AlertType.INFORMATION);
             } else {
-                CustomServerImp customServerImp = new CustomServerImp();
-                List<Custom> customList = customServerImp.findCustomsByIdOrName(serText.getText().trim());
-                if (customList.isEmpty()) {
-                    InfoUtils.alertUtil("无搜索结果", "信息", Alert.AlertType.INFORMATION);
-                } else {
-                    MyDialog addUserDia = new MyAdSerUserDia();
-                    ObservableList<Custom> serUsers = FXCollections.observableArrayList();
-                    serUsers.addAll(customList);
-                    Controller.primaryStage.setUserData(serUsers);
-                    Dialog dialog = addUserDia.creMYDia(Controller.primaryStage);
-                    dialog.showAndWait();
+                MyDialog addUserDia = new MyAdminSerShopTypeDia();
+                ObservableList<ShopType> serUsers = FXCollections.observableArrayList();
+                serUsers.addAll(shopTypes);
+                Controller.primaryStage.setUserData(serUsers);
+                Dialog dialog = addUserDia.creMYDia(Controller.primaryStage);
+                dialog.showAndWait();
 
 
-                }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
     public void upCusUi() {
-//        if (customSer == null) {
-//            InfoUtils.alertUtil("请选择一行数据", "提示", Alert.AlertType.INFORMATION);
-//        } else {
-//            Controller.primaryStage.setUserData(customSer);
-//            MyDialog addUserDia = new MyAdUpUserDia();
-//            Dialog dialog = addUserDia.creMYDia(Controller.primaryStage);
-//            dialog.showAndWait();
-//        }
+        if (shopType == null) {
+            InfoUtils.alertUtil("请选择一行数据", "提示", Alert.AlertType.INFORMATION);
+        } else {
+            Controller.primaryStage.setUserData(shopType);
+            MyDialog addUserDia = new MyAdminUpShopTypeDia();
+            Dialog dialog = addUserDia.creMYDia(Controller.primaryStage);
+            dialog.showAndWait();
+       }
 
 
+    }
+    public void refreshCus()
+    {
+        ShopTypeServerImp shopTypeServerImp=new ShopTypeServerImp();
+        List<ShopType> shopTypes= shopTypeServerImp.findAll();
+        users.clear();
+        users.addAll(shopTypes);
+        test.refresh();
     }
 
 

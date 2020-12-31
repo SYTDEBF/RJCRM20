@@ -8,8 +8,8 @@ import java.util.List;
 public interface CustomServer {
     Custom getCustom(int id);
 
-    @Select("select id, custom_name as CustomName, custom_phone from tb_custom  where id=#{id}")
-    Custom getCustom2(int id);
+    @Select("select id from tb_custom where id=#{arg0} and custom_password=#{arg1}")
+    Custom getCustomByIdAndPassword(Integer id,String password);
 
     int insertCustom(Custom custom);
 

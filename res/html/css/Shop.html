@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.js"></script>
+
+</head>
+<body>
+<div class="container" id="main">
+<!--    <div class="col-12">-->
+<!--        <div class="h2 mt-1">-->
+<!--            商品-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+</div>
+<script>
+    function showShop(shop)
+    {
+        let shopHtml="";
+
+
+        for (let i=0;i<shop.length;i++)
+        {
+            shopHtml+="    <div class=\"col-12 mt-3\">\n" +
+                "        <div class=\"card border-secondary mb-3\" >\n" +
+                "            <div class=\"row no-gutters\">\n" +
+                "                <div class=\"col-md-4\">\n" +
+                "                    <img src=\"mac.jpg\" class=\"card-img m-1\"  alt=\"...\">\n" +
+                "                </div>\n" +
+                "                <div class=\"col-md-8\">\n" +
+                "                    <div class=\"card-body\">\n" +
+                "                        <h5 class=\"card-title\">"+shop[i].shop_name+"</h5>\n" +
+                "                        <p class=\"card-text\">"+shop[i].shop_pri+"</p>\n" +
+                "                        <p class=\"card-text\">"+shop[i].shop_date+"</p>\n" +
+                "                        <p class=\"card-text\">"+shop[i].typename+"</p>\n" +
+                "                        <a href=\"#\" class=\"btn btn-primary\" onclick="+"\""+"buyShop("+shop[i].id+")"+"\""+">购买</a>\n" +
+                "                    </div>\n" +
+                "\n" +
+                "                </div>\n" +
+                "            </div>\n" +
+                "        </div>\n" +
+                "    </div>\n"
+
+        }
+
+        document.getElementById("main").innerHTML=shopHtml
+    }
+    function buyShop(id)
+    {
+
+    }
+
+</script>
+</body>
+</html>

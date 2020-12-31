@@ -56,7 +56,7 @@
         <padding>
             <Insets top="20" left="50" right="50"/>
         </padding>
-        <TextField  prefWidth="250" maxWidth="250" promptText="账号" text="mz" fx:id="name">
+        <TextField  prefWidth="250" maxWidth="250" promptText="账号" text="1" fx:id="name">
         </TextField>
     </StackPane>
     <StackPane >

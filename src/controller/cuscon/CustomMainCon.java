@@ -1,0 +1,79 @@
+package controller.cuscon;
+
+
+import controller.adcon.Controller;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
+import javafx.geometry.Side;
+import javafx.scene.control.Label;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+
+public class CustomMainCon implements Initializable {
+    @FXML
+    Pane leftPane;
+
+    @FXML
+    TabPane wordText1;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+        Text text=new Text("管理员");
+        text.relocate(16,28);
+
+        //add.setOnAction(action-> addUerPane.afterShow(new ADminUiTest()));
+
+        wordText1.setSide(Side.LEFT);
+        wordText1.setRotateGraphic(true);
+        Tab tabZero=new Tab();
+        ImageView imageView = new ImageView(new Image("/img/crm.png"));
+        imageView.setFitHeight(100);
+        imageView.setFitWidth(100);
+        Label label=new Label();
+        label.setPadding(new Insets(48,0,0,0));
+        label.setGraphic(imageView);
+        tabZero.setGraphic(label);
+        tabZero.setDisable(true);
+        Tab infoTab=new Tab("个人信息");
+
+
+        Tab welTab=new Tab("商品");
+        StackPane stackPane= null;
+        try {
+            stackPane = FXMLLoader.load(getClass().getResource("/fxml/CustomShop.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        welTab.setContent(stackPane);
+        Tab orderTab=new Tab("订单信息");
+        VBox orderVBox= null;
+        try {
+            orderVBox = FXMLLoader.load(getClass().getResource("/fxml/CustomOrder.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        orderTab.setContent(orderVBox);
+
+      System.out.println("123"+ Controller.cusRoot.getUserData());
+
+
+        wordText1.getTabs().addAll(tabZero,welTab,orderTab,infoTab);
+        wordText1.getSelectionModel().select(1);
+    }
+
+}

@@ -21,8 +21,13 @@ public class CustomServerImp implements CustomServer {
     }
 
     @Override
-    public Custom getCustom2(int id) {
-        return null;
+    public Custom getCustomByIdAndPassword(Integer id, String password) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        CustomServer customServerMapper = sqlSession.getMapper(CustomServer.class);
+        Custom custom=customServerMapper.getCustomByIdAndPassword(id,password);
+        sqlSession.commit();
+        sqlSession.close();
+        return custom;
     }
 
     @Override

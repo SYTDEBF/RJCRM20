@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TabPane?>
+
+<HBox prefHeight="700" prefWidth="1200" style="-fx-background-color:white" stylesheets="@/css/adminUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.cuscon.CustomMainCon">
+   <children>
+       <TabPane fx:id="wordText1" prefHeight="30" prefWidth="1150" stylesheets="@/css/TabPane.css" tabClosingPolicy="UNAVAILABLE" tabMaxWidth="135" tabMinWidth="135" tabMinHeight="90"  tabMaxHeight="90" HBox.hgrow="ALWAYS" />
+   </children>
+
+
+</HBox>

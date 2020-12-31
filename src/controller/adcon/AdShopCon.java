@@ -1,5 +1,6 @@
 package controller.adcon;
 
+import domain.Custom;
 import domain.Shop;
 import dto.ShopDto;
 import javafx.beans.value.ChangeListener;
@@ -10,13 +11,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import serverimp.CustomServerImp;
 import serverimp.ShopServerImp;
 import ui.MyDialog;
-import ui.adminuser.MyAdUpUserDia;
-import ui.adminuser.MyAdminAddShopCia;
-import ui.adminuser.MyAdminUpShopDia;
+import ui.adminuser.*;
 import util.InfoUtils;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -119,5 +120,35 @@ public class AdShopCon implements Initializable {
 
         }
     }
-    public void serShopUi(){}
+    public void serShopUi(){
+        if(serText.getText().trim()==null)
+        {
+            InfoUtils.alertUtil("请输入搜索内容","警告", Alert.AlertType.WARNING);
+        }else {
+            ShopServerImp shopServerImp=new ShopServerImp();
+            List<Shop> shops = shopServerImp.getShopByIdOrName(serText.getText().trim());
+            if (shops.isEmpty())
+            {
+                InfoUtils.alertUtil("无搜索结果","信息", Alert.AlertType.INFORMATION);
+            }else
+            {
+                MyDialog addUserDia=new MyAdminShopSerDia();
+                ObservableList<Shop> serUsers = FXCollections.observableArrayList();
+                serUsers.addAll(shops);
+                Controller.primaryStage.setUserData(serUsers);
+                Dialog dialog=addUserDia.creMYDia(Controller.primaryStage);
+                dialog.showAndWait();
+
+
+            }
+        }
+    }
+    public void refreshCus()
+    {
+        ShopServerImp shopServerImp= new ShopServerImp();
+        List<ShopDto> shopList = shopServerImp.getAllShop();
+        users.clear();
+        users.addAll(shopList);
+        test.refresh();
+    }
 }
