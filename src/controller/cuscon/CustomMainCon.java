@@ -66,7 +66,6 @@ public class CustomMainCon implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         welTab.setContent(stackPane);
         Tab orderTab=new Tab("订单信息");
         VBox orderVBox= null;

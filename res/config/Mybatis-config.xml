@@ -16,7 +16,8 @@
     <typeAlias alias="datacoudto" type="dto.DataCouDto"/>  
     <typeAlias type="domain.Shop" alias="shop"/>  
     <typeAlias type="dto.ShopDto" alias="shopdto"/>  
-    <typeAlias type="dto.StaffDto" alias="staffDto"/> 
+    <typeAlias type="dto.StaffDto" alias="staffDto"/>
+    <typeAlias type="domain.Plan" alias="plan"/>
   </typeAliases>  
   <!-- 数据库环境 -->  
   <environments default="development"> 
@@ -37,6 +38,7 @@
     <mapper resource="mapper/ShopType.xml"/>  
     <mapper resource="mapper/staff.xml"/>  
     <mapper resource="mapper/Order.xml"/>  
-    <mapper resource="mapper/adminsta.xml"/> 
+    <mapper resource="mapper/adminsta.xml"/>
+    <mapper resource="mapper/plan.xml"/>
   </mappers> 
 </configuration>

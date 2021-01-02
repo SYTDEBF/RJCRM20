@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox prefHeight="40" prefWidth="1900" style="-fx-background-color:white" stylesheets="@/css/adminUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.stacon.StaffPlanMainCon"
+>
+    <children>
+        <TabPane fx:id="wordText1" prefHeight="30" prefWidth="900" stylesheets="@/css/StaffTabPane.css" tabClosingPolicy="UNAVAILABLE" tabMaxWidth="135" tabMinWidth="135" tabMinHeight="30"  tabMaxHeight="30" HBox.hgrow="ALWAYS">
+            <tabs>
+                <Tab fx:id="noteTab" text="便签视图">
+
+                </Tab>
+                <Tab fx:id="tableTab" text="表格视图">
+
+                </Tab>
+            </tabs>
+        </TabPane>
+
+    </children>
+</HBox>

@@ -27,54 +27,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/res/fxml/AdminSerShopType.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/AdminUpShopType.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/CustomAddOrder.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/CustomOrder.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/CustomSerOrder.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/CustomShop.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/CustomUI.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/html/css/Shop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/html/css/mac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/adcon/AdShopTypeSerCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/adcon/AdminUpShopTypeCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/cuscon/CrmCookies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomAddOrderCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomMainCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomOrderCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomOrderSerCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomShopCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyAdminSerShopTypeDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyAdminShopSerDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyAdminUpShopTypeDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyCustomAddrDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyCustomOrderSerDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/SAsa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="员工模块">
+      <change afterPath="$PROJECT_DIR$/cookies.mz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/css/StaffTabPane.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/fxml/StaffAddPlan.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/fxml/StaffPlan.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/fxml/StaffPlanMain.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/fxml/StaffPlanNote.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/fxml/StaffUpPlan.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/html/css/Plan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/mapper/plan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffAddPlanCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffPlanCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffPlanMainCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffPlanNoteCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffUpPlanCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/PlanServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/serverimp/PlanServerImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyStaffAddPlanDia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyStaffUpPlanDia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RJCRM/config/Mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/config/Mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/mapper/Custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/mapper/Custom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/server/CustomServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/server/CustomServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/serverimp/CustomServerImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/serverimp/CustomServerImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/css/TabPane.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/css/TabPane.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/css/adminUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/css/adminUI.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/config/Mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/config/Mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/fxml/ShopType.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/ShopType.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/html/css/adminwel.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/html/css/adminwel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/mapper/Custom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/Custom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/mapper/Order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/Order.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/adcon/AdminOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminOrderCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/adcon/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/adcon/ShopTypeCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminShopTypeCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/css/TabPane.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/TabPane.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/css/adminUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/adminUI.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/cuscon/CustomAddOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomAddOrderCon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/cuscon/CustomMainCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomMainCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/cuscon/CustomOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomOrderCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/StaffDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/StaffDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/CustomServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/CustomServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/OrderServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/OrderServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/StaffServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/StaffServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serverimp/CustomServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/CustomServerImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/stacon/StaffMainCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/stacon/StaffMainCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Plan.java" afterDir="false" />
     </list>
+    <list id="53f30f73-80a3-48d6-aaff-0b8dfd2d3b6c" name="员工模块" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,10 +113,10 @@
         <option value="JavaFXApplication" />
         <option value="Tag Library Descriptor" />
         <option value="HTML File" />
-        <option value="mybatis" />
         <option value="CSS File" />
         <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="mybatis" />
         <option value="Class" />
       </list>
     </option>
@@ -192,7 +176,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/fxml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/controller/stacon" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -208,11 +192,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/controller/stacon" />
       <recent name="$PROJECT_DIR$/res/fxml" />
+      <recent name="$PROJECT_DIR$/res/css" />
       <recent name="$PROJECT_DIR$/res/html/css" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/res/font" />
-      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/controller/adcon" />
@@ -226,8 +210,8 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="controller.stacon" />
       <recent name="ui.adminuser" />
+      <recent name="controller.stacon" />
       <recent name="controller.cuscon" />
       <recent name="controller.adcon" />
       <recent name="controller" />
@@ -507,6 +491,10 @@
       <workItem from="1609337630219" duration="2896000" />
       <workItem from="1609372229813" duration="608000" />
       <workItem from="1609373065827" duration="11871000" />
+      <workItem from="1609483889890" duration="5792000" />
+      <workItem from="1609507960956" duration="5750000" />
+      <workItem from="1609569351323" duration="11554000" />
+      <workItem from="1609600474124" duration="1436000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1605579615573</created>
@@ -578,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609373427944</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="员工模块">
+      <created>1609393497478</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609393497478</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +604,8 @@
     <MESSAGE value="常规" />
     <MESSAGE value="用户，商品，员工，订单增删改查" />
     <MESSAGE value="用户模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户模块" />
+    <MESSAGE value="员工模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="员工模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css" >
+    <link rel="stylesheet" href="font-awesome.min.css">
+</head>
+<body>
+<div class="container" id="main">
+    <br>
+<!--    <div class="col-12">-->
+<!--        <div class="card shadow border-left-primary py-2" >-->
+<!--            <div class="card-body">-->
+<!--                <div class="row align-items-center no-gutters">-->
+<!--                    <div class="col-10">-->
+<!--                        <h5 class="card-title">今日目标:销量</h5>-->
+<!--                        <h6 class="card-subtitle mb-2 text-muted">时间</h6>-->
+<!--                        <p class="card-text">计划内容小阿帅大叔大叔大叔大叔大叔大叔大叔大叔大叔的</p>-->
+<!--                        <a href="#" class="card-link">完成情况</a>-->
+<!--                    </div>-->
+<!--                    <div class="col-2">-->
+<!--                        <div class="col-auto"><i class="fa fa-times-circle-o fa-5x" style="color:red"></i></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+<script>
+    function showPlan(planJson)
+    {
+        let planHtml="";
+
+        for (let i=0;i<planJson.length;i++)
+        {
+            let date =  planJson[i].plan_time
+
+            if(planJson[i].plan_mark==1)
+            {
+                planHtml+=" <div class=\"col-12\">\n" +
+                    "        <div class=\"card shadow border-left-primary py-2\" >\n" +
+                    "            <div class=\"card-body\">\n" +
+                    "                <div class=\"row align-items-center no-gutters\">\n" +
+                    "                    <div class=\"col-10\">\n" +
+                    "                        <h5 class=\"card-title\">"+"今日目标销量:"+planJson[i].plan_profit+"单"+"</h5>\n" +
+                    "                        <h6 class=\"card-subtitle mb-2 text-muted\">"+date+"</h6>\n" +
+                    "                        <p class=\"card-text\">"+planJson[i].plan_stand+"</p>\n" +
+                    "                    </div>\n" +
+                    "                    <div class=\"col-2\">\n" +
+                    "                        <div class=\"col-auto\"><i class=\"fa fa-check-circle-o fa-5x\" style=\"color:green;\"></i></div>\n" +
+                    "                    </div>\n" +
+                    "                </div>\n" +
+                    "            </div>\n" +
+                    "        </div>\n" +
+                    "   </div><br>"
+            }
+            else
+            {
+                planHtml+=" <div class=\"col-12\">\n" +
+                    "        <div class=\"card shadow border-left-primary py-2\" >\n" +
+                    "            <div class=\"card-body\">\n" +
+                    "                <div class=\"row align-items-center no-gutters\">\n" +
+                    "                    <div class=\"col-10\">\n" +
+                    "                        <h5 class=\"card-title\">"+"今日目标销量:"+planJson[i].plan_profit+"单"+"</h5>\n" +
+                    "                        <h6 class=\"card-subtitle mb-2 text-muted\">"+date+"</h6>\n" +
+                    "                        <p class=\"card-text\">"+planJson[i].plan_stand+"</p>\n" +
+                    "                    </div>\n" +
+                    "                    <div class=\"col-2\">\n" +
+                    "                        <div class=\"col-auto\"><i class=\"fa fa-times-circle-o fa-5x\" style=\"color:#ec3e2c;\"></i></div>\n" +
+                    "                    </div>\n" +
+                    "                </div>\n" +
+                    "            </div>\n" +
+                    "        </div>\n" +
+                    "   </div><br>"
+            }
+
+
+        }
+
+        document.getElementById("main").innerHTML=planHtml;
+    }
+    function getDateTime(date) {
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var hh = date.getHours();
+        var mm = date.getMinutes();
+        var ss = date.getSeconds();
+        if(month<10) {
+            month = "0" + month;
+        }
+        if(day<10) {
+            day = "0" + day;
+        }
+        if(hh<10) {
+            hh = "0" + hh;
+        }
+        if(mm<10) {
+            mm = "0" + mm;
+        }
+        if(ss<10) {
+            ss = "0" + ss;
+        }
+        return year + "-" + month + "-" + day + " " + hh + ":" + mm + ":" + ss;
+    }
+
+    function ConvertJSONDateToJSDate(jsondate) {
+        var date = new Date(parseInt(jsondate.replace("/Date(", "").replace(")/", ""), 10));
+        return date;
+    }
+
+</script>
+
+</body>
+</html>

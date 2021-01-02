@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:white" stylesheets="@/css/adminUI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.stacon.StaffUpPlanCon">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgb(248,246,231);" BorderPane.alignment="CENTER">
+
+         <children>
+            <Label fx:id="addLabel" text="" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="修改计划" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Microsoft YaHei" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="plan_profit" promptText="计划单数">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextArea fx:id="plan_stand" prefHeight="200.0" prefWidth="200.0" promptText="计划内容">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <HBox prefHeight="4.0" prefWidth="488.0">
+               <opaqueInsets>
+                  <Insets left="30.0" />
+               </opaqueInsets>
+               <children>
+                  <Label text="是否完成">
+                     <HBox.margin>
+                        <Insets left="30.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="yes_rad" mnemonicParsing="false" text="是">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="no_rad" mnemonicParsing="false" text="否">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+
+
+            <Button mnemonicParsing="false" onAction="#sendInfo" text="修改">
+               <font>
+                  <Font name="Microsoft YaHei" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="2.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

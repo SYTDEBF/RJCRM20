@@ -76,7 +76,6 @@ public class CustomAddOrderCon implements Initializable {
           {
              InfoUtils.alertUtil("必须为数字","",Alert.AlertType.WARNING);
           }
-          System.out.println(LocalDate.now());
     }
     public synchronized void cusHandle(KeyEvent event) {
 

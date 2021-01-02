@@ -25,6 +25,29 @@
 
 }
 
+.text-area {
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 1.5 0; // top, right, bottom, left
+-fx-background-color:rgb(255,255,255);
+}
+.text-area:focused {
+    -fx-border-color: #5e5ec6;
+    -fx-border-width: 0 0 1.5 0; // top, right, bottom, left
+-fx-background-color:transparent;
+
+}
+.date-picker > .text-field {
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 1.5 0; // top, right, bottom, left
+    -fx-background-color:rgb(255,255,255);
+}
+
+.text-area .content{
+    -fx-border-color: grey;
+    -fx-border-width: 0 0 0 0; // top, right, bottom, left
+-fx-background-color:rgb(255,255,255);
+}
+
 .table-view {
     -fx-base: #ffffff;
     -fx-control-inner-background: #ffffff;

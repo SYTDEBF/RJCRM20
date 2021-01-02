@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="server.PlanServer">
+    <insert id="addPlan" parameterType="plan" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_plan (staff_id, plan_profit, plan_time, plan_stand, plan_mark) VALUE
+        (#{staff_id},#{plan_profit},#{plan_time},#{plan_stand},#{plan_mark})
+    </insert>
+    <update id="upPlan" parameterType="plan">
+        update tb_plan set
+                       plan_profit=#{plan_profit},
+                       plan_time=#{plan_time},
+                       plan_stand=#{plan_stand},
+                       plan_mark=#{plan_mark},
+                       staff_id=#{staff_id}
+                       where id=#{id};
+    </update>
+</mapper>
