@@ -14,4 +14,10 @@
                        staff_id=#{staff_id}
                        where id=#{id};
     </update>
+    <delete id="delPlan" parameterType="java.lang.Integer">
+        delete from tb_plan where id=#{id}
+    </delete>
+    <select id="getPlanByContent" resultType="plan">
+        select * from tb_plan where plan_stand like '%${arg0}%' and staff_id=#{arg1}
+    </select>
 </mapper>

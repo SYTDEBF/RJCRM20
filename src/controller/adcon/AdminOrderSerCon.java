@@ -43,9 +43,6 @@ public class AdminOrderSerCon implements Initializable {
         adressCol.setMinWidth(200);
         adressCol.setCellValueFactory(
                 new PropertyValueFactory<>("staff_id"));
-
-
-
         serre.setItems((ObservableList<Order>) Controller.primaryStage.getUserData());
         serre.setEditable(true);
         serre.getColumns().addAll(firstNameCol, lastNameCol, emailCol,adressCol);

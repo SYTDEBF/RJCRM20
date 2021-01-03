@@ -13,6 +13,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
@@ -75,6 +76,12 @@ public class StaffMainCon implements Initializable {
         try {
             HBox staffVBox=FXMLLoader.load(getClass().getResource("/fxml/StaffPlanMain.fxml"));
             planTab.setContent(staffVBox);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            StackPane stackPane=FXMLLoader.load(getClass().getResource("/fxml/StaffAchievement.fxml"));
+            welTab.setContent(stackPane);
         } catch (IOException e) {
             e.printStackTrace();
         }

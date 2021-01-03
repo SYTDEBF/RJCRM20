@@ -27,36 +27,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="员工模块">
-      <change afterPath="$PROJECT_DIR$/cookies.mz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/css/StaffTabPane.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/StaffAddPlan.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/StaffPlan.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/StaffPlanMain.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/StaffPlanNote.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/StaffUpPlan.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/html/css/Plan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/mapper/plan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffAddPlanCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffPlanCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffPlanMainCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffPlanNoteCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffUpPlanCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/PlanServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverimp/PlanServerImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyStaffAddPlanDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyStaffUpPlanDia.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="员工计划模块">
+      <change afterPath="$PROJECT_DIR$/res/fxml/StaffAchievement.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/fxml/StaffSerPlan.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/html/css/StaffAchievement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffAchCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffSerPlanCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/StaffAchievementDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/StaffAllAchDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyStaffPlanSerDia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/config/Mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/config/Mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/css/TabPane.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/css/TabPane.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/css/adminUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/css/adminUI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/config/Mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/config/Mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/css/TabPane.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/TabPane.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/css/adminUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/adminUI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/cuscon/CustomAddOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomAddOrderCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/cuscon/CustomMainCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomMainCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/html/css/adminwel.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/html/css/adminwel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/mapper/plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/plan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/adcon/AdminOrderSerCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminOrderSerCon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/stacon/StaffMainCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/stacon/StaffMainCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/stacon/StaffPlanCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/stacon/StaffPlanCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/PlanServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/PlanServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/StaffServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/StaffServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverimp/PlanServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/PlanServerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" afterDir="false" />
     </list>
     <list id="53f30f73-80a3-48d6-aaff-0b8dfd2d3b6c" name="员工模块" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,11 +101,11 @@
         <option value="JavaScript File" />
         <option value="JavaFXApplication" />
         <option value="Tag Library Descriptor" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Interface" />
-        <option value="FxmlFile" />
         <option value="mybatis" />
+        <option value="HTML File" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -176,7 +165,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/controller/stacon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/fxml" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -192,13 +181,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/controller/stacon" />
       <recent name="$PROJECT_DIR$/res/fxml" />
+      <recent name="$PROJECT_DIR$/src/controller/stacon" />
       <recent name="$PROJECT_DIR$/res/css" />
       <recent name="$PROJECT_DIR$/res/html/css" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/crmhtml" />
+      <recent name="$PROJECT_DIR$/res/" />
       <recent name="$PROJECT_DIR$/src/controller/adcon" />
       <recent name="$PROJECT_DIR$/res/html/css" />
       <recent name="$PROJECT_DIR$/res/html" />
@@ -217,7 +208,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Main">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -243,81 +234,7 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration name="ASD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="util.ASD" />
-      <module name="RJCRM" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ASDD (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ASDD" />
-      <module name="RJCRM" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ASDD" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ui.ASDD" />
-      <module name="RJCRM" />
-      <option name="PROGRAM_PARAMETERS" value="--module-path $USER_HOME$/javafx-sdk-16/lib --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.web,javafx.media,javafx.graphics,javafx.swing" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyConfigUpUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="util.MyConfigUpUtil" />
-      <module name="RJCRM" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.cuscon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySqlConUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="util.MySqlConUtil" />
-      <module name="RJCRM" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controller.cuscon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SAsa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SAsa" />
-      <module name="RJCRM" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sd" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ui.sd" />
-      <module name="RJCRM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -354,25 +271,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="应用程序.Main" />
-      <item itemvalue="应用程序.ASDD" />
-      <item itemvalue="应用程序.sd" />
-      <item itemvalue="应用程序.ASD" />
-      <item itemvalue="应用程序.MyConfigUpUtil" />
-      <item itemvalue="应用程序.ASDD (1)" />
-      <item itemvalue="应用程序.MySqlConUtil" />
-      <item itemvalue="应用程序.SAsa" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.SAsa" />
-        <item itemvalue="应用程序.MySqlConUtil" />
-        <item itemvalue="应用程序.ASDD (1)" />
-        <item itemvalue="应用程序.MyConfigUpUtil" />
-        <item itemvalue="应用程序.ASD" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -494,7 +392,9 @@
       <workItem from="1609483889890" duration="5792000" />
       <workItem from="1609507960956" duration="5750000" />
       <workItem from="1609569351323" duration="11554000" />
-      <workItem from="1609600474124" duration="1436000" />
+      <workItem from="1609600474124" duration="1611000" />
+      <workItem from="1609641837392" duration="3798000" />
+      <workItem from="1609654137190" duration="7512000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1605579615573</created>
@@ -573,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609393497478</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="员工计划模块">
+      <created>1609602081560</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1609602081560</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +512,8 @@
     <MESSAGE value="用户，商品，员工，订单增删改查" />
     <MESSAGE value="用户模块" />
     <MESSAGE value="员工模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="员工模块" />
+    <MESSAGE value="员工计划模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="员工计划模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

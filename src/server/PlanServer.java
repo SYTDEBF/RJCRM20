@@ -23,4 +23,18 @@ public interface PlanServer {
     int addPlan(Plan plan);
 
     int upPlan(Plan plan);
+
+    /**
+     * 删除计划通过id
+     * @param id
+     * @return
+     */
+    int delPlan(Integer id);
+
+    /**
+     * 通过内容查找
+     * @param keyword
+     * @return
+     */
+    List<Plan> getPlanByContent(String keyword,Integer id);
 }

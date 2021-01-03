@@ -116,49 +116,48 @@ public class StaffPlanCon implements Initializable {
             InfoUtils.alertUtil("请选择一行数据","", Alert.AlertType.WARNING);
         }else
         {
-//
-//            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-//            alert.setContentText("你确定要删除吗");
-//
-//            Optional<ButtonType> result = alert.showAndWait();
-//            if (result.get() == ButtonType.OK){
-//                // ... user chose OK
-//                OrderServerImp orderServerImp=new OrderServerImp();
-//                int n=orderServerImp.deleteOrder(orderDto.getId());
-//                if (n==1)
-//                {
-//                    InfoUtils.alertUtil("删除成功","", Alert.AlertType.INFORMATION);
-//                    refreshOrder();
-//                }else
-//                {
-//                    InfoUtils.alertUtil("删除失败","", Alert.AlertType.WARNING);
-//                }
-//
-//            }
+
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setContentText("你确定要删除吗");
+
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK){
+                PlanServerImp planServerImp=new PlanServerImp();
+                int n=planServerImp.delPlan(plan.getId());
+                if (n==1)
+                {
+                    InfoUtils.alertUtil("删除成功","", Alert.AlertType.INFORMATION);
+                    refreshOrder();
+                }else
+                {
+                    InfoUtils.alertUtil("删除失败","", Alert.AlertType.WARNING);
+                }
+
+            }
 
         }
     }
     public void orderSerUi ()
     {
-//        if(serText.getText().trim()==null)
-//        {
-//            InfoUtils.alertUtil("请输入搜索内容","警告", Alert.AlertType.WARNING);
-//        }else {
-//            OrderServerImp orderServerImp=new OrderServerImp();
-//            List<OrderDto> orders = orderServerImp.getOrderDtoByIdOrNameCus((Integer)Controller.cusRoot.getUserData());
-//            if (orders.isEmpty())
-//            {
-//                InfoUtils.alertUtil("无搜索结果","信息", Alert.AlertType.INFORMATION);
-//            }else
-//            {
-//                MyDialog serOrderDia=new MyCustomOrderSerDia();
-//                ObservableList<OrderDto> observableList = FXCollections.observableArrayList();
-//                observableList.addAll(orders);
-//                Controller.primaryStage.setUserData(observableList);
-//                Dialog dialog=serOrderDia.creMYDia(Controller.primaryStage);
-//                dialog.showAndWait();
-//            }
-//        }
+        if(serText.getText().trim()==null)
+        {
+            InfoUtils.alertUtil("请输入搜索内容","警告", Alert.AlertType.WARNING);
+        }else {
+            PlanServerImp planServerImp=new PlanServerImp();
+            List<Plan> plans = planServerImp.getPlanByContent(serText.getText().trim(),(Integer)Controller.staRoot.getUserData());
+            if (plans.isEmpty())
+            {
+                InfoUtils.alertUtil("无搜索结果","信息", Alert.AlertType.INFORMATION);
+            }else
+            {
+                MyDialog serPlanDia=new MyStaffPlanSerDia();
+                ObservableList<Plan> observableList = FXCollections.observableArrayList();
+                observableList.addAll(plans);
+                Controller.primaryStage.setUserData(observableList);
+                Dialog dialog=serPlanDia.creMYDia(Controller.primaryStage);
+                dialog.showAndWait();
+            }
+        }
     }
     public void refreshOrder()
     {

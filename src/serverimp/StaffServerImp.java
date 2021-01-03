@@ -1,6 +1,8 @@
 package serverimp;
 
 import domain.Staff;
+import dto.StaffAchievementDto;
+import dto.StaffAllAchDto;
 import dto.StaffDto;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -103,5 +105,31 @@ public class StaffServerImp implements  StaffServer{
         sqlSession.commit();
         sqlSession.close();
         return staff;
+    }
+
+    /**
+     * 员工业绩
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public StaffAchievementDto getStaffAchievementById(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        StaffServer shopTypeServerMapper = sqlSession.getMapper(StaffServer.class);
+        StaffAchievementDto staffAchievementDto=shopTypeServerMapper.getStaffAchievementById(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return staffAchievementDto;
+    }
+
+    @Override
+    public List<StaffAllAchDto> getStaffAllAch() {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        StaffServer shopTypeServerMapper = sqlSession.getMapper(StaffServer.class);
+        List<StaffAllAchDto> staffAllAch=shopTypeServerMapper.getStaffAllAch();
+        sqlSession.commit();
+        sqlSession.close();
+        return staffAllAch;
     }
 }

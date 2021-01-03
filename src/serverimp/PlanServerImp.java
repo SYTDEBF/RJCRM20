@@ -53,4 +53,36 @@ public class PlanServerImp implements PlanServer {
         sqlSession.close();
         return n;
     }
+
+    /**
+     * 删除计划通过id
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public int delPlan(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        PlanServer planServerMapper = sqlSession.getMapper(PlanServer.class);
+        int n =planServerMapper.delPlan(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
+
+    /**
+     * 通过内容查找
+     *
+     * @param keyword
+     * @return
+     */
+    @Override
+    public List<Plan> getPlanByContent(String keyword,Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        PlanServer planServerMapper = sqlSession.getMapper(PlanServer.class);
+        List<Plan>plans =planServerMapper.getPlanByContent(keyword,id);
+        sqlSession.commit();
+        sqlSession.close();
+        return plans;
+    }
 }
