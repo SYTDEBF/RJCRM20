@@ -21,6 +21,7 @@ import util.InfoUtils;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AdminUserInfoCon implements Initializable {
@@ -151,6 +152,43 @@ public class AdminUserInfoCon implements Initializable {
             dialog.showAndWait();
         }
 
+    }
+    public void delCus()
+    {
+        if (customSer==null)
+        {
+            InfoUtils.alertUtil("请选择一行数据","", Alert.AlertType.WARNING);
+        }else
+        {
+
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setContentText("你确定要删除吗,删除用户将会删除用户的所有信息,包括订单信息");
+
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK){
+
+                OrderServerImp orderServerImp=new OrderServerImp();
+                int n=orderServerImp.delOrderByCusId(customSer.getId());
+                try {
+                    CustomServerImp customServerImp=new CustomServerImp();
+                    int n1=customServerImp.deleteCustom(customSer.getId());
+                    if (n1==1)
+                    {
+                        InfoUtils.alertUtil("删除成功","", Alert.AlertType.INFORMATION);
+                        refreshCus();
+                    }else
+                    {
+                        InfoUtils.alertUtil("删除失败","", Alert.AlertType.WARNING);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+
+            }
+
+        }
     }
     public void refreshCus()
     {

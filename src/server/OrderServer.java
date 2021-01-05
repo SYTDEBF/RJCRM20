@@ -2,6 +2,7 @@ package server;
 
 import domain.Order;
 import dto.OrderDto;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -52,6 +53,9 @@ public interface OrderServer {
      * @return
      */
     List<OrderDto> getOrderByStaffId(Integer id);
+
+    @Delete("delete from tb_order where custom_id=#{cusId}")
+    int  delOrderByCusId(Integer cusId);
 
 
 }

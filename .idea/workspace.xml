@@ -27,25 +27,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="员工计划模块">
-      <change afterPath="$PROJECT_DIR$/res/fxml/StaffAchievement.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fxml/StaffSerPlan.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/html/css/StaffAchievement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffAchCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/stacon/StaffSerPlanCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/StaffAchievementDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/StaffAllAchDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/adminuser/MyStaffPlanSerDia.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="员工业绩模块">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/html/css/adminwel.html" beforeDir="false" afterPath="$PROJECT_DIR$/res/html/css/adminwel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/mapper/plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/mapper/plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/adcon/AdminOrderSerCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminOrderSerCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/stacon/StaffMainCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/stacon/StaffMainCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/stacon/StaffPlanCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/stacon/StaffPlanCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/PlanServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/PlanServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/StaffServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/StaffServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serverimp/PlanServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/PlanServerImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/StaffServerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminUserInfo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminUserInfo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/adcon/AdminUserInfoCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminUserInfoCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/stacon/StaffOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/stacon/StaffOrderCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/CustomServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/CustomServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/OrderServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/OrderServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverimp/CustomServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/CustomServerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" afterDir="false" />
     </list>
     <list id="53f30f73-80a3-48d6-aaff-0b8dfd2d3b6c" name="员工模块" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,6 +126,7 @@
     <hideBySeverity>
       <option value="15" />
     </hideBySeverity>
+    <option name="selectedIndex" value="1" />
     <option name="showPreview" value="true" />
   </component>
   <component name="ProjectId" id="1kOkHGKbSbWVkfgyu1ZEAGecNy5" />
@@ -395,6 +386,12 @@
       <workItem from="1609600474124" duration="1611000" />
       <workItem from="1609641837392" duration="3798000" />
       <workItem from="1609654137190" duration="7512000" />
+      <workItem from="1609685813758" duration="106000" />
+      <workItem from="1609726316700" duration="1025000" />
+      <workItem from="1609757330540" duration="712000" />
+      <workItem from="1609805041708" duration="1463000" />
+      <workItem from="1609842090588" duration="1105000" />
+      <workItem from="1609843749163" duration="234000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1605579615573</created>
@@ -480,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609602081560</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="员工业绩模块">
+      <created>1609685874808</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609685874808</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +517,8 @@
     <MESSAGE value="用户模块" />
     <MESSAGE value="员工模块" />
     <MESSAGE value="员工计划模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="员工计划模块" />
+    <MESSAGE value="员工业绩模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="员工业绩模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -116,4 +116,14 @@ public class OrderServerImp implements OrderServer {
         sqlSession.close();
         return orderDtos;
     }
+
+    @Override
+    public int delOrderByCusId(Integer cusId) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        OrderServer orderServerMapper = sqlSession.getMapper(OrderServer.class);
+        int n =orderServerMapper.delOrderByCusId(cusId);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
+    }
 }

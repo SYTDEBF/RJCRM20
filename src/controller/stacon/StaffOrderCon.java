@@ -76,7 +76,7 @@ public class StaffOrderCon implements Initializable {
     public void refreshOrder()
     {
         OrderServerImp orderServerImp=new OrderServerImp();
-        List<OrderDto> customList = orderServerImp.getOrderByStaffId((Integer) Controller.cusRoot.getUserData());
+        List<OrderDto> customList = orderServerImp.getOrderByStaffId((Integer) Controller.staRoot.getUserData());
         users.clear();
         users.addAll(customList);
         test.refresh();

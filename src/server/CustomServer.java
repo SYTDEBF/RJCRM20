@@ -14,7 +14,7 @@ public interface CustomServer {
 
     int insertCustom(Custom custom);
 
-    int deleteCustom(Long id);
+    int deleteCustom(Integer id);
 
     int updateCustom(Custom custom);
 

@@ -48,8 +48,13 @@ public class CustomServerImp implements CustomServer {
     }
 
     @Override
-    public int deleteCustom(Long id) {
-        return 0;
+    public int deleteCustom(Integer id) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        CustomServer customServerMapper = sqlSession.getMapper(CustomServer.class);
+        int n=customServerMapper.deleteCustom(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return n;
     }
 
     @Override

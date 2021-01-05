@@ -27,7 +27,7 @@
                              <Insets right="10.0" />
                          </HBox.margin>
                      </Button>
-                     <Button fx:id="delBut" minWidth="80">
+                     <Button fx:id="delBut" minWidth="80" onAction="#delCus">
                          <HBox.margin>
                              <Insets right="10.0" />
                          </HBox.margin>
