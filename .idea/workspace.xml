@@ -27,15 +27,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="员工业绩模块">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="删除员工">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/fxml/AdminUserInfo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminUserInfo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/adcon/AdminUserInfoCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/AdminUserInfoCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/stacon/StaffOrderCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/stacon/StaffOrderCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/CustomServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/CustomServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/OrderServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/OrderServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serverimp/CustomServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/CustomServerImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverimp/OrderServerImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RJCRM/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RJCRM/fxml/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdSetting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdSetting.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/AdminAddStaff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/AdminAddStaff.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/res/fxml/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/adcon/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/adcon/Controller.java" afterDir="false" />
     </list>
     <list id="53f30f73-80a3-48d6-aaff-0b8dfd2d3b6c" name="员工模块" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +166,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -392,6 +390,22 @@
       <workItem from="1609805041708" duration="1463000" />
       <workItem from="1609842090588" duration="1105000" />
       <workItem from="1609843749163" duration="234000" />
+      <workItem from="1609843991757" duration="38000" />
+      <workItem from="1609853790566" duration="101000" />
+      <workItem from="1609854392994" duration="70000" />
+      <workItem from="1609854767371" duration="74000" />
+      <workItem from="1609855133470" duration="124000" />
+      <workItem from="1609896669459" duration="1413000" />
+      <workItem from="1609902844297" duration="989000" />
+      <workItem from="1609989438489" duration="284000" />
+      <workItem from="1609990472003" duration="585000" />
+      <workItem from="1609997522342" duration="2733000" />
+      <workItem from="1610008706330" duration="92000" />
+      <workItem from="1610173114484" duration="571000" />
+      <workItem from="1610409820812" duration="13000" />
+      <workItem from="1610409857608" duration="1071000" />
+      <workItem from="1610535095577" duration="1596000" />
+      <workItem from="1610588867438" duration="295000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1605579615573</created>
@@ -484,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609685874808</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="删除员工">
+      <created>1609844012957</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1609844012957</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +539,8 @@
     <MESSAGE value="员工模块" />
     <MESSAGE value="员工计划模块" />
     <MESSAGE value="员工业绩模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="员工业绩模块" />
+    <MESSAGE value="删除员工" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除员工" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,11 +553,6 @@
           <url>file://$PROJECT_DIR$/src/util/MySqlConUtil.java</url>
           <line>20</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/util/MySqlConUtil.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/util/MySqlConUtil.java</url>

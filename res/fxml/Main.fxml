@@ -12,6 +12,7 @@
 <?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
 <VBox
       xmlns:fx="http://javafx.com/fxml/1"
       prefHeight="700"
@@ -63,8 +64,8 @@
         <padding>
             <Insets top="20" left="50" right="50"/>
         </padding>
-        <TextField  prefWidth="250" maxWidth="250" promptText="密码" text="123456" fx:id="password">
-        </TextField>
+        <PasswordField  prefWidth="250" maxWidth="250" promptText="密码" text="123456" fx:id="password">
+        </PasswordField>
     </StackPane>
 
     <StackPane alignment="CENTER">

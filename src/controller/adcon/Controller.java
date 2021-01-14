@@ -80,8 +80,7 @@ public class Controller  {
                 primaryStage.setTitle("CRM");
 
                 Scene scene = new Scene(root);
-                scene.getStylesheets().addAll(
-                        "org/kordamp/bootstrapfx/bootstrapfx.css");
+
 
                 primaryStage.setScene(scene);
                 primaryStage.show();

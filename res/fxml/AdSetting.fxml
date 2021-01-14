@@ -55,21 +55,21 @@
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="dbName" maxWidth="250.0" prefWidth="250.0" promptText="数据库名">
+            <TextField fx:id="dbName" maxWidth="250.0" prefWidth="250.0" promptText="数据库名" text="db_crm">
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="dbUserName" maxWidth="250.0" prefWidth="250.0" promptText="用户名">
+            <TextField fx:id="dbUserName" maxWidth="250.0" prefWidth="250.0" promptText="用户名" text="root">
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
             </TextField>
-            <TextField fx:id="dbPassword" maxWidth="250.0" prefWidth="250.0" promptText="密码">
+            <PasswordField fx:id="dbPassword" maxWidth="250.0" prefWidth="250.0" promptText="密码" text="123456">
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
-            </TextField>
+            </PasswordField>
             <TextField fx:id="dbUrl" alignment="TOP_LEFT" maxWidth="250.0" prefWidth="250.0" promptText="连接url">
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
