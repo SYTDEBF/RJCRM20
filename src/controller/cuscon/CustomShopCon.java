@@ -57,7 +57,7 @@ public class CustomShopCon implements Initializable {
                     jsonArray.add(jsonObject);
                 }
 
-                System.out.println("debgu"+ CrmCookies.cus_id);
+                System.out.println("debug"+jsonArray.toJSONString());
                 webEngine.executeScript("showShop("+jsonArray.toJSONString()+");");
             }
         });
