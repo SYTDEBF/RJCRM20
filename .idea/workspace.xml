@@ -27,24 +27,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="一般修改">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="&#10;sql">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/cuscon/CustomShopCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/cuscon/CustomShopCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/MySqlConUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MySqlConUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/OrderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/QWE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SAsa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Sdd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ShopTypeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Tree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TreeNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Trees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/asd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ui/ASDD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ui/ShoopTypeUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ui/sd.java" beforeDir="false" />
     </list>
     <list id="53f30f73-80a3-48d6-aaff-0b8dfd2d3b6c" name="员工模块" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,13 +150,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/fxml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.last.edited" value="库" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20344828" />
     <property name="recentsLimit" value="5" />
@@ -182,11 +166,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/res/fxml" />
       <recent name="$PROJECT_DIR$/src/controller/stacon" />
       <recent name="$PROJECT_DIR$/res/css" />
       <recent name="$PROJECT_DIR$/res/html/css" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/res/crmhtml" />
@@ -435,7 +419,7 @@
       <workItem from="1610859729317" duration="801000" />
       <workItem from="1610866865190" duration="3903000" />
       <workItem from="1610935083275" duration="2758000" />
-      <workItem from="1611050136718" duration="172000" />
+      <workItem from="1611050136718" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1605579615573</created>
@@ -542,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610589685320</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="&#10;sql">
+      <created>1611050407817</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611050407817</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +569,8 @@
     <MESSAGE value="员工业绩模块" />
     <MESSAGE value="删除员工" />
     <MESSAGE value="一般修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="一般修改" />
+    <MESSAGE value="&#10;sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;sql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
